@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Lt.woff2') format('woff2'),
+        url('UncutSans-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Bd.woff2') format('woff2'),
+        url('UncutSans-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Md.woff2') format('woff2'),
+        url('UncutSans-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Rg.woff2') format('woff2'),
+        url('UncutSans-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-SmBd.woff2') format('woff2'),
+        url('UncutSans-SmBd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Bd.woff2') format('woff2'),
+        url('UncutSans-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Rg.woff2') format('woff2'),
+        url('UncutSans-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url('UncutSans-Md.woff2') format('woff2'),
+        url('UncutSans-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
