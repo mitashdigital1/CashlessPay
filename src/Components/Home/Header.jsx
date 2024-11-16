@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../../Css/Home/Header.Css'
 import Hero from './Hero_Section'
 import Logo from '../../assets/Your paragraph text.png'
 import { Link } from 'react-router-dom'
