@@ -1,0 +1,56 @@
+.a-seven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.a-main-seven{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-seven-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #54725D;
+    padding: 50px 30px;
+    border-radius: 30px;
+    gap: 70px;
+}
+.a-seven-main-handing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.a-seven-main-handing h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.a-seven-main-peragraph{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.a-seven-main-peragraph h3{
+    font-size: 23px;
+    font-family: 'Uncut Sans';
+    font-weight: 300;
+    color: white;
+}
+.a-seven-main-peragraph p{
+    font-size: 18px;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    width: 500px;
+    color: white;
+}
+.a-seven-image{
+ width: 640px;
+}
+.a-seven-image image{
+    width: 100%;
+}

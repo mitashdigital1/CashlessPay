@@ -1,0 +1,79 @@
+.c-first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin-top: 100px;
+
+}
+.c-first:hover{
+    cursor: pointer;
+    background-color: #54725D;
+    transition: ease-in 1s;
+}
+.c-main-first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+
+}
+.c-first-handing{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+.c-first-handing h1{
+    font-size: 60px;
+     font-weight: 800;
+     color: white;
+     letter-spacing: 3px;
+}
+.c-first-handing p{
+    font-size: 20px;
+    font-family: 'Uncut Sans';
+    font-weight: 500;
+    color: white;
+ 
+}
+.c-first-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.c-right-item-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+     border-top: 1px solid white;
+     border-bottom: 1px solid white;
+    padding: 40px 2px;
+}
+.c-right-item-one p{
+    font-size: 15px;
+    font-family: 'Uncut Sans';
+    font-weight: 500;
+    color: white;
+}
+.c-right-item-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 2px;
+}
+.c-right-item-two button{  
+  padding:8px 2px;
+  width: 80px;
+  height: 50px;
+  font-family: 'Uncut Sans';
+  font-weight: 500;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}

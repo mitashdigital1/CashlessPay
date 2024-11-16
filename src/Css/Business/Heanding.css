@@ -1,0 +1,23 @@
+.handing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+     
+
+}
+.main-handing {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 100px;
+ 
+  
+
+}
+.main-handing h1{
+    font-size: 75px;
+    transform: scale(1.4, 1.3);
+     font-weight: 800;
+}

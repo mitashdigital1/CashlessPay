@@ -1,0 +1,95 @@
+.bg-yellow{
+ 
+}
+.fifthe{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+.main-fifthe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px 30px;
+}
+.left h1{
+    font-size: 90px;
+    line-height: 83%;
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: scale(1, 1);
+    letter-spacing: 3px;
+    color: white;
+}
+.left p{
+    font-size: 20px;
+    width: 400px;
+    margin-top: 20px;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    color: black;
+    color: white;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+     
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 40px;
+}
+.box h1{
+    font-size: 60px;
+    color: white;
+}
+.b-main-box-one{
+    background-color: #0766FF;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.b-main-box-two{
+ background-color: #54725D;
+ border-radius: 10px;
+ padding: 20px 30px;
+}
+.child-box{
+    /* width: 300px; */
+}
+.child-box h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+.child-box p{
+    font-size: 18px;
+    width: 400px;
+    margin-top: 8px;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    color: black;
+    color: white;
+}
+.button{
+    background-color:#0766FF;
+    color: white;
+    cursor: pointer;
+    width: 290px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 2px 2px; 
+    transform: scale(1, 1.5);
+    margin-top: 50px;
+  
+}

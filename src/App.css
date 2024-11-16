@@ -5,20 +5,25 @@
     list-style: none;
     text-decoration: none;
  }
- html,body{
-    width: 100%;
-    height: 100%;
-     
- }
+ 
 
  body{
+  width: 100%;
+  height: 100%;
   font-family: 'Zuume';
   font-weight: bold;
   font-style: normal;
-  margin: auto;
+  margin: 0  auto;
   background-color: #0a2822;
+  
+  
  }
+ /* .root{
+   
  
+  
+ }
+  */
 
  @font-face {
   font-family: 'Zuume';

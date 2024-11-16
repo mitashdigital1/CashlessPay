@@ -1,0 +1,151 @@
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+ 
+ 
+     
+}
+.line{
+  width: 1250px;
+  height: 1px;
+  background-color: white;
+
+}
+.footer{
+    display: flex;
+    justify-content:center;
+    gap: 270px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.nav-first-item p {
+  font-size: 18px;
+  color: white;
+  font-family: 'Uncut Sans';
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.nav-first-item a{
+  display: block;
+  color: white;
+  font-family: 'Uncut Sans';
+  font-weight: normal;
+  margin-top: 10px;
+}
+ 
+ 
+ 
+
+ 
+
+.footer-second {
+  display: flex;
+ gap: 920px;
+ margin-top: 50px
+}
+.footer-second  .logo{
+  width: 200px;
+
+}
+.footer-second .logo img{
+  width: 100%;
+  filter: invert(10);
+}
+ 
+
+ .footer-second .icons{
+   font-size: 25px;
+   color: white;
+   margin-top: 30px;
+   cursor: pointer;
+   display: flex;
+   gap: 20px;
+ }
+  
+  
+ 
+ 
+ 
+ 
+ .footer-end{
+  margin-top: 20px;
+  width: 1240px;
+ }
+ .footer-end span{
+   color: white;
+    font-size: 90%;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+  
+
+ }
+  
+
+  /* responsive */
+ @media  screen and (min-width:200px) and (max-width:767px){
+   .main-footer{
+    margin-top: 200px;
+   }
+  .footer{
+    gap: 0px;
+    flex-wrap: wrap;
+   }
+   .line{
+    width: 300px;
+   }
+   .footer-second{
+   gap: 0px;
+   }
+   .footer-thred {
+    /* margin-left: 100px; */
+   }
+   .footer-end{
+    width: 300px;
+   }
+    
+   
+}
+@media  screen and (min-width:768px) and (max-width:991px) {
+  .footer{
+    gap: 60px;
+    flex-wrap: wrap;
+   }
+   .line{
+    width: 660px;
+   }
+   .footer-second{
+   gap: 300px;
+   }
+   .footer-thred {
+    /* margin-left: 100px; */
+   }
+   .footer-end{
+    width: 500px;
+   }
+}
+
+@media  screen and (min-width:992px) and (max-width:1024px) {  
+   .footer{
+    gap: 160px;
+   }
+   .line{
+    width: 1000px;
+   }
+   .footer-second{
+   gap: 600px;
+   }
+   .footer-thred {
+    /* margin-left: 100px; */
+   }
+   .footer-end{
+    width: 1000px;
+   }
+   
+}
+
+@media  screen and (min-width:1025px) and (max-width:1200px) {  
+} 

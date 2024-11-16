@@ -3,7 +3,7 @@
  import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Components import
-import Header from './Components/Header'
+ 
 
 // Screen
  import Business from './Screens/Business'
@@ -23,7 +23,7 @@ import Careers from './Screens/Careers'
     <BrowserRouter>
       <Routes>
         <Route path='/' index element={<Home/>}/>
-        <Route path='business' element={<Business/>}/>
+        <Route path='businesspay' element={<Business/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='careers' element={<Careers/>}/>
         <Route path='contact' element={<Contact/>}/>
