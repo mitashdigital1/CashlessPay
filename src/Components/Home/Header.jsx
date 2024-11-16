@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Hero from './Hero_Section'
-import './Header.Css'
+import './Header.css'
 import Logo from '../../assets/Your paragraph text.png'
 import { Link } from 'react-router-dom'
 import { IoMenu } from "react-icons/io5";
