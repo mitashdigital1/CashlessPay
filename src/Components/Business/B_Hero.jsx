@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Css/Business/B_Hero.css'
-
+import flagsgif from "..//../assets/flags/flagsgif.gif"
 
 const B_Hero = () => {
   return (
@@ -9,7 +9,15 @@ const B_Hero = () => {
             <div className='main-hero'>
               <div className='top-box'>
                <div className='main-handing'>
-               <h1>Sell Globally, Accept Locally</h1>
+               <h1>
+                <span className="text">Sell</span>
+                <span className="image-container">
+                 <img src={flagsgif} alt="" />
+                </span>
+                <span className="text">&nbsp;Globally</span> 
+                <br></br>
+                Accept &nbsp; Locally
+                </h1>
                {/* <h1>from your global customers</h1> */}
                </div>
                 <div className='second-handing'>

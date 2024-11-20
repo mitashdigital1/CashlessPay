@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 140px;
+    font-family: "Bebas Neue", sans-serif;
+
 }
 .a-main-eight{
     display: flex;
@@ -10,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    background-color: #035B67;
+    /* background-color: #035B67; */
     border-radius: 30px;
     padding: 50px 225px;
 
@@ -36,12 +38,15 @@
     width: 800px;
 }
 .a-eight-item button{
-    background-color:#0766FF;
+    background-color:#659287;
     color: white;
     cursor: pointer;
     border: none;
     outline: none;
     border-radius: 30px;
     font-size: 15px;
-    padding: 8px 8px; 
+    padding: 8px 25px; 
+}
+.a-eight-item button:hover{
+    background-color: #65867e;
 }

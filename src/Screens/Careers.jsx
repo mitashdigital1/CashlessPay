@@ -4,7 +4,11 @@ import Footer from '../Components/Home/Footer'
 import C_Hero from '../Components/Careere/C_Hero'
 import C_Firsth from '../Components/Careere/C_Firsth'
 import C_Video from '../Components/Careere/C_Video'
-
+import C_first_ssection from '../Components/Careere/C_firstsection'
+import C_second_section from '../Components/Careere/C_secondsection'
+import C_thrid_section from '../Components/Careere/C_thirdsection'
+import C_fourth_section from '../Components/Careere/C_fourthsection'
+import C_fifth_section from '../Components/Careere/C_fifthsection'
 const Careers = () => {
   return (
     <>
@@ -12,6 +16,11 @@ const Careers = () => {
         <Header/>
       
         <C_Hero/>
+        <C_first_ssection/>
+        <C_second_section/>
+        <C_thrid_section/>
+        <C_fourth_section/>
+        <C_fifth_section/>
 {/*         
         <C_Firsth h1={'FRONT-END DEVELOPER'} p1={'Craft seamless, mobile-first interfaces for digital nomads using React Native and Expo. Collaborate with our design and engineering teams, and work remotely with opportunities to engage globally. Make a tangible impact on Blazes user experience.'} p2={'Location'} p3={'CDMX/REMOTE/FULL-time'}  bt1={'React'} bt2={'React-Native'} bt3={'JavaScript'} bt4={'HTML'} bt5={'CSS'} /> */}
 

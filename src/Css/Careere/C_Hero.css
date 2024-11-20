@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    background-color: #035B67;
+    /* background-color: #035B67; */
     padding: 50px 68px;
     border-radius: 30px;
 }

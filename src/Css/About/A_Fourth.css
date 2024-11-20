@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&display=swap');
 .a-fourth{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-     
+    font-family:  "Bebas Neue", sans-serif;
 }
 .a-main-fourth{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #54725D;
+    background-color: #47663B;
     padding: 50px 40px;
     border-radius: 30px;
     gap: 40px;
@@ -21,10 +22,11 @@
     gap: 20px;
 }
 .a-first-part h3{
-    font-size: 23px;
+    font-size: 45px;
     font-family: 'Uncut Sans';
-    font-weight: 300;
+    font-weight: 500;
     color: white;
+    font-family:"Bebas Neue", sans-serif;
 }
 .a-first-part p{
     font-size: 18px;

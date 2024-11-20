@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&display=swap');
+
+.C_section:hover{
+  background-color: #47663B;
+}
+.C_section-content{
+    color: white;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: "Oswald";
+}
+.C_section-left{
+    width: 55%;
+    margin: auto;
+}
+.C_section-left h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.C_section-left p{
+    width: 80%;
+    font-weight: 300;
+}
+.C_section-right{
+    display: flex;
+    width: 30%;
+    margin-right: 20px;
+  flex-direction: column;
+}
+.C_section-right .uper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: -40px;
+}
+.C_section-right .down{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+}
+.C_section-right .down p{
+    font-size: 12px;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 4px;
+    padding: 0 10px;
+}

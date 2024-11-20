@@ -13,7 +13,7 @@
    z-index: -1;
    gap: 20px;
    padding: 20px 10px;  
-    background-color: #035B67 ;
+    /* background-color: #035B67 ; */
     border-radius: 40px;
     overflow: hidden;
 }
@@ -71,7 +71,7 @@
   display: none;
 }
 .hero-left-item .h1 {
-    color: #E88263;
+    color: #e6c20f;
     font-style: normal;
     transform: scale(1.4, 1.3);
     font-weight: 800;
@@ -174,7 +174,7 @@ width: 600px;
     margin-left: 13px;
     }
     #h1{
-      color: #E88263;
+      color: #e6c20f
     }
     
     .peragrph p{
@@ -228,7 +228,7 @@ width: 600px;
     display:block;
   }
   #h1{
-    color: #E88263;
+    color: #e6c20f
   }
   
   .peragrph{
@@ -277,7 +277,7 @@ width: 600px;
     display:block;
   }
   #h1{
-    color: #E88263;
+    color: #e6c20f
   }
   
   .peragrph{
