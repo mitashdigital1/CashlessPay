@@ -11,12 +11,12 @@ const C_fifth_section = () => {
         </p>
     </div>
     <div className="C_section-right">
-        <hr/>
+        <span></span>
         <div className='uper'>
             <h3>Location</h3>
             <p>CDMX/Remote/Full-time</p>
             </div>
-            <hr />    
+          <span></span>  
     <div className='down'>
         <p>Full-Dtack</p>
     <p>React Native</p>

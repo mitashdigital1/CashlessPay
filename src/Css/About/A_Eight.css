@@ -35,7 +35,7 @@
     font-family: 'Uncut Sans';
     font-weight: normal;
     color: white;
-    width: 800px;
+    width: 100%;
 }
 .a-eight-item button{
     background-color:#659287;
@@ -50,3 +50,25 @@
 .a-eight-item button:hover{
     background-color: #65867e;
 }
+
+
+@media (max-width:1024px){
+    .a-eight-item {
+        width: 100%;
+    }
+}
+@media(max-width:839px){
+    .a-eight-item p{
+        width:100%;
+    }
+}
+@media(max-width:710px){
+    .a-eight-item h1{
+        font-size: 60px;
+    }
+    .a-eight-item p{
+        width: 100%;
+        font-size: 19px;
+    }
+}
+

@@ -12,7 +12,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    /* background-color: #035B67; */
     padding: 50px 68px;
     border-radius: 30px;
 }
@@ -39,4 +38,57 @@
     font-family: 'Uncut Sans';
     font-weight: 500;
     color: white;
+}
+.c-hero-down{
+    color: white;
+    font-family: "Oswald";
+    font-weight: 300;
+    margin-left: 90px;
+}
+hr{
+    margin-top: 50px;   
+}
+
+@media (max-width: 768px) {
+    .c-hero {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    .c-hero-main {
+        padding: 30px 20px;
+    }
+
+    .c-hero-handing h1 {
+        font-size: 60px;
+        transform: scale(1.2, 1.1); 
+    }
+
+    .c-hero-paragraph p {
+        font-size: 18px; 
+    }
+
+    .c-hero-down {
+        margin-left: 0; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-hero {
+        margin-top: 50px;
+    }
+
+    .c-hero-handing h1 {
+        font-size: 40px; 
+        transform: scale(1.1, 1); 
+    }
+
+    .c-hero-paragraph p {
+        font-size: 16px;
+    }
+
+    .c-hero-main {
+        padding: 20px 15px;
+    }
 }

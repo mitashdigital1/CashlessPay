@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS  from 'aos'
+import 'aos/dist/aos.css'
 import '../../Css/Home/Forth.css'
 // import Img from '../assets/blaze videos/show-1.png'
 
 const Four_Section = () => {
+   useEffect(()=> {
+      AOS.init({ duration: 3000});
+   },[]
+   );
   return (
     <>
        <div className='main-forth'>
        <div className='forth'>
-         <div className="left-four-sec-item">
+         <div className="left-four-sec-item" data-aos="zoom-out-right">
             {/* <video   autoPlay muted loop playsInline src="https://blaze.money/videos/blaze-pay-search.mp4"></video> */}
             <img src='https://fedmobile.federalbank.co.in/wp-content/uploads/2020/08/UPI.png' alt="" />
          </div>

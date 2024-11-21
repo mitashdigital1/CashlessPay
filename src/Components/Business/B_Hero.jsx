@@ -10,11 +10,11 @@ const B_Hero = () => {
               <div className='top-box'>
                <div className='main-handing'>
                <h1>
-                <span className="text">Sell</span>
+                Sell&nbsp;
                 <span className="image-container">
                  <img src={flagsgif} alt="" />
                 </span>
-                <span className="text">&nbsp;Globally</span> 
+                &nbsp;Globally
                 <br></br>
                 Accept &nbsp; Locally
                 </h1>

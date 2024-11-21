@@ -4,14 +4,18 @@ import '../../Css/Contact/Co_First.css'
 const Co_First = () => {
     return (
         <div >
+            <div className="main-heading">
+                <h1>Contact Us</h1>
+
+            </div>
             <div className='co-first'>
                 <div className='co-main-first'>
                     <div className='co-first-item'>
                         <h1>Get in Touch with CASHLESSPAY</h1>
-                      
+
                     </div>
                     <div className='co-first-pragraph'>
-                    <p>We’re here to help with any questions or support you may need.</p>
+                        <p>We’re here to help with any questions or support you may need.</p>
                         <p>Whether you have questions about our services, need help with your account, or want to learn more about how CASHLESSPAY can support your business, our team is ready to assist. Please reach out using the contact form below or connect with us through our customer support channels.
                         </p>
                     </div>

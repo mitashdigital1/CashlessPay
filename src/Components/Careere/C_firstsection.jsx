@@ -1,6 +1,5 @@
 import React from 'react'
-import '../../Css/Careere/C_fiirstsection.css'
-
+import "../../Css/Careere/C_fiirstsection.css"
 const C_first_ssection = () => {
   return (
     <>
@@ -13,20 +12,19 @@ const C_first_ssection = () => {
             </p>
         </div>
         <div className="C_section-right">
-            <hr/>
+            <span></span>
             <div className='uper'>
                 <h3>Location</h3>
                 <p>CDMX/Remote/Full-time</p>
                 </div>
-                <hr />    
+                <span></span>   
         <div className='down'>
             <p>React</p>
         <p>React Native</p>
         <p>JavaScript</p>
         <p>HTML</p>
         <p>CSS</p>
-        </div>
-            
+        </div>            
         </div>
         </div>
     <hr />

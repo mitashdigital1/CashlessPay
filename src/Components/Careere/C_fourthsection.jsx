@@ -10,12 +10,12 @@ const C_fourth_section = () => {
         </p>
     </div>
     <div className="C_section-right">
-        <hr/>
+    <span></span>    
         <div className='uper'>
             <h3>Location</h3>
             <p>CDMX/Remote/Full-time</p>
             </div>
-            <hr />    
+            <span></span>        
     <div className='down'>
         <p>SQL</p>
     <p>Excel</p>

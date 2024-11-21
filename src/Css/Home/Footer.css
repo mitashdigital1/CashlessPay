@@ -1,25 +1,36 @@
-.main-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
- 
- 
-     
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.line{
-  width: 1250px;
+
+.line {
+  width: 100%;
+  max-width: 1250px;
   height: 1px;
   background-color: white;
-
+  margin: 10px 0;
 }
-.footer{
-    display: flex;
-    justify-content:center;
-    gap: 270px;
-    margin-top: 10px;
-    padding: 5px 10px;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 1250px;
+  box-sizing: border-box;
+}
+
+.nav-first-item {
+  flex: 1;
+  min-width: 150px;
+  max-width: 250px;
 }
 
 .nav-first-item p {
@@ -27,125 +38,111 @@
   color: white;
   font-family: 'Uncut Sans';
   font-weight: 300;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
-.nav-first-item a{
+
+.nav-first-item a {
   display: block;
   color: white;
   font-family: 'Uncut Sans';
   font-weight: normal;
   margin-top: 10px;
+  text-decoration: none;
 }
- 
- 
- 
-
- 
 
 .footer-second {
   display: flex;
- gap: 920px;
- margin-top: 50px
-}
-.footer-second  .logo{
-  width: 200px;
-
-}
-.footer-second .logo img{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
+  max-width: 1250px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.footer-second .logo {
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-second .logo img {
+  width: 100%;
+  max-width: 200px;
   filter: invert(10);
 }
- 
 
- .footer-second .icons{
-   font-size: 25px;
-   color: white;
-   margin-top: 30px;
-   cursor: pointer;
-   display: flex;
-   gap: 20px;
- }
-  
-  
- 
- 
- 
- 
- .footer-end{
+.footer-second .icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footer-end {
   margin-top: 20px;
-  width: 1240px;
- }
- .footer-end span{
-   color: white;
-    font-size: 90%;
-    font-family: 'Uncut Sans';
-    font-weight: normal;
-  
-
- }
-  
-
-  /* responsive */
- @media  screen and (min-width:200px) and (max-width:767px){
-   .main-footer{
-    margin-top: 200px;
-   }
-  .footer{
-    gap: 0px;
-    flex-wrap: wrap;
-   }
-   .line{
-    width: 300px;
-   }
-   .footer-second{
-   gap: 0px;
-   }
-   .footer-thred {
-    /* margin-left: 100px; */
-   }
-   .footer-end{
-    width: 300px;
-   }
-    
-   
-}
-@media  screen and (min-width:768px) and (max-width:991px) {
-  .footer{
-    gap: 60px;
-    flex-wrap: wrap;
-   }
-   .line{
-    width: 660px;
-   }
-   .footer-second{
-   gap: 300px;
-   }
-   .footer-thred {
-    /* margin-left: 100px; */
-   }
-   .footer-end{
-    width: 500px;
-   }
+  width: 100%;
+  max-width: 1250px;
+  text-align: center;
 }
 
-@media  screen and (min-width:992px) and (max-width:1024px) {  
-   .footer{
-    gap: 160px;
-   }
-   .line{
-    width: 1000px;
-   }
-   .footer-second{
-   gap: 600px;
-   }
-   .footer-thred {
-    /* margin-left: 100px; */
-   }
-   .footer-end{
-    width: 1000px;
-   }
-   
+.footer-end span {
+  color: white;
+  font-size: 14px;
+  font-family: 'Uncut Sans';
+  font-weight: normal;
 }
 
-@media  screen and (min-width:1025px) and (max-width:1200px) {  
-} 
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .line {
+      width: 90%;
+  }
+
+  .footer {
+      gap: 20px;
+  }
+
+  .footer-second {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .footer-end {
+      font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .line {
+      width: 80%;
+  }
+
+  .footer {
+      gap: 40px;
+  }
+
+  .footer-second {
+      gap: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .line {
+      width: 90%;
+  }
+
+  .footer {
+      gap: 60px;
+  }
+
+  .footer-second {
+      gap: 50px;
+  }
+}

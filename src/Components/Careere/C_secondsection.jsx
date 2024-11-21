@@ -11,12 +11,12 @@ const C_second_section = () => {
             </p>
         </div>
         <div className="C_section-right">
-            <hr/>
+        <span></span>    
             <div className='uper'>
                 <h3>Location</h3>
                 <p>CDMX/Remote/Contract</p>
                 </div>
-                <hr />    
+                <span></span>        
         <div className='down'>
             <p>Figma</p>
         <p>Adobe Suite</p>
