@@ -15,7 +15,7 @@ import singaporeflag from "..//../assets/flags/singapore.png"
 import thailandflag from "..//../assets/flags/thailandflag.png"
 import vietnamflag from "..//../assets/flags/vietnam.png"
 
-const Header = () => {
+const Header = ({setShowlogin}) => {
   const [mobileItem, setMobileItem] = useState(false)
   const Clicked = () => {
     setMobileItem(!mobileItem)
@@ -118,7 +118,7 @@ const Header = () => {
               </div>
             </div>
             <div className='btn'>
-              <button>DOWNLOAD APP</button>
+              <button onClick={()=>setShowlogin(true)} >Get Started</button>
             </div>
             <IoMenu onClick={Clicked} className='menu' />
           </div>

@@ -13,11 +13,11 @@ const Footer = () => {
                 <div className='footer'>
                     <div className="nav-first-item">
                         <p>Company</p>
-                        <a href="#">PersonalPay</a>
-                        <a href="#">BusinessPay</a>
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Contact</a>
+                        <a href="http://localhost:5173/">PersonalPay</a>
+                        <a href="http://localhost:5173/businesspay">BusinessPay</a>
+                        <a href="http://localhost:5173/about">About</a>
+                        <a href="http://localhost:5173/careers">Careers</a>
+                        <a href="http://localhost:5173/contact">Contact</a>
                     </div>
 
                     <div className="nav-first-item">

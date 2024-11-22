@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&display=swap'); */
 .a-fourth{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    font-family:  "Bebas Neue", sans-serif;
 }
 .a-main-fourth{
     display: flex;
@@ -22,11 +21,11 @@
     gap: 20px;
 }
 .a-first-part h3{
-    font-size: 45px;
+    font-size: 75px;
     font-family: 'Uncut Sans';
-    font-weight: 500;
+    font-weight: 800;
     color: white;
-    font-family:"Bebas Neue", sans-serif;
+    font-family:"zuume";
 }
 .a-first-part p{
     font-size: 18px;
@@ -84,5 +83,10 @@
 @media(max-width:710px){
     .a-first-part p{
         width: 100%;
+    }
+}
+@media  screen and (min-width:120px) and (max-width:768px){
+    .a-second-part img{
+        height: auto;
     }
 }

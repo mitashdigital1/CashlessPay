@@ -338,4 +338,31 @@ margin-top: 40px;
    width: 500px;
   }
 } 
+
+.hero-right-item {
+  width: 600px;
+  position: relative; /* Ensure the container has a position context */
+}
+
+.hero-right-item img {
+  width: 100%;
+  position: absolute; /* Stack images on top of each other */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.hero-right-item img:nth-child(2) {
+  z-index: 2; /* Place the second image slightly behind */
+}
+
+.hero-right-item img:nth-child(3) {
+  z-index: 2; /* Place the third image slightly behind */
+}
+
+.hero-right-item img:nth-child(4) {
+  z-index: 2; /* Place the fourth image at the back */
+}
+
  

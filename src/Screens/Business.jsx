@@ -8,6 +8,7 @@ import B_TheredSec from '../Components/Business/B_ThredSec'
 import B_FortSec from '../Components/Business/B_FourtSec'
 import B_FifthSec from '../Components/Business/B_Fifth'
 import B_Sixth from '../Components/Business/B_Sixth'
+import B_Seven from '../Components/Business/B_SevenSec'
 
 const Business = () => {
   return (
@@ -17,14 +18,17 @@ const Business = () => {
       
         
           <B_Hero/>
+          <B_Seven/>
           {/* <B_SecondSec/> */}
           </div> 
           <div>
           {/* <Handing/> */}
           <B_TheredSec/>
-          <B_FortSec/>
+          
           </div>
-          {/* <B_FifthSec/> */}
+          
+          <B_FifthSec/>
+          <B_FortSec/>
           {/* <B_Sixth/> */}
         <div >
         <Footer/>

@@ -23,8 +23,9 @@
 }
 .a-first-fifth-handing h2{
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 800;
     color: white;
+    font-family:"zuume";
 }
 .a-first-fifth-paragraph{
  display: flex;
@@ -73,5 +74,10 @@
 @media(max-width:710px){
     .a-first-fifth-paragraph p{
         width: 100%;
+    }
+}
+@media  screen and (min-width:120px) and (max-width:768px){
+    .a-second-fifth-part img{
+        height: auto;
     }
 }

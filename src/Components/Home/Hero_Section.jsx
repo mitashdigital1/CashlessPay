@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import '../../Css/Home/Hero.css'
 import {useTypewriter} from 'react-simple-typewriter'
+import Orange from '..//..//assets/a/orange.png'
+import Yellow from '..//..//assets/a/yellow.png'
+import Lightgreen from '..//..//assets/a/light-green.png'
+import Phone from '..//..//assets/a/phone.png'
 
-const Hero_Section = () => {
+
+const Hero_Section = ({setShowlogin}) => {
  const [text] = useTypewriter({
     words:['TRAVELLERS', 'FAMILIES', 'STUDENTS', 
         'FREELANCERS', 'ENTREPRENEURS', 'SMEs'],
@@ -10,6 +17,14 @@ const Hero_Section = () => {
     typeSpeed:120,
     deleteSpeed:80,
  })
+ useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Duration of animation
+      easing: 'ease-in-out', // Easing function for animation
+      once: false, // Animation happens only once
+    });
+  }, []);
     return (
         <>
             <div className='main'>
@@ -36,14 +51,20 @@ const Hero_Section = () => {
                             
                         </div>
                         <div className='btn-1'>
-                            <button>DOWNLOAD APP</button>
+                            <button onClick={()=>setShowlogin(true)}>Get Started</button>
                         </div>
                     </div>
 
                     <div className="hero-right-item">
                         {/* <video  autoPlay muted loop src={Video}>
                         </video> */}
-                        <img src="https://spicemoney.com/_next/image?url=%2Fimages%2Fabout3.png&w=1920&q=75" alt="" />
+                        
+                        {/* <img src="https://spicemoney.com/_next/image?url=%2Fimages%2Fabout3.png&w=1920&q=75" alt="" /> */}
+                        <img src={Orange} alt="" />
+                        <img src={Yellow} alt="" />
+                        <img src={Phone} alt="" data-aos="zoom-out-down" />
+
+                        
                     </div>
                 </div>
             </div>

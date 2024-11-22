@@ -14,6 +14,10 @@ const C_Hero = () => {
             </div>
             </div>
         </div>
+        <div className='c-hero-down'>
+          <h3>Open positions at Cashlesspay: </h3>
+        </div>
+        <hr />
     </>
   )
 }

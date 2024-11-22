@@ -1,95 +1,152 @@
-.bg-yellow{
- 
-}
-.fifthe{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 60px;
-}
-.main-fifthe{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    padding: 20px 30px;
-}
-.left h1{
-    font-size: 90px;
-    line-height: 83%;
-    font-weight: 800;
-    text-transform: uppercase;
-    transform: scale(1, 1);
-    letter-spacing: 3px;
-    color: white;
-}
-.left p{
-    font-size: 20px;
-    width: 400px;
-    margin-top: 20px;
-    font-family: 'Uncut Sans';
-    font-weight: normal;
-    color: black;
-    color: white;
-}
-.main-box{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-     
-}
-.box{
+.container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #54725D;
     margin-top: 50px;
-    gap: 40px;
 }
-.box h1{
-    font-size: 60px;
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-section h1 {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
     color: white;
+    letter-spacing: 3px;
 }
-.b-main-box-one{
-    background-color: #0766FF;
-    border-radius: 10px;
-    padding: 20px 30px;
-}
-.b-main-box-two{
- background-color: #54725D;
- border-radius: 10px;
- padding: 20px 30px;
-}
-.child-box{
-    /* width: 300px; */
-}
-.child-box h3{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: white;
-}
-.child-box p{
-    font-size: 18px;
-    width: 400px;
-    margin-top: 8px;
+
+.left-section p {
+    font-size: 20px;
     font-family: 'Uncut Sans';
     font-weight: normal;
-    color: black;
     color: white;
 }
-.button{
-    background-color:#0766FF;
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+
+}
+
+.blckline {
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.step h2 {
+    font-size: 2em;
+    font-weight: bold;
     color: white;
-    cursor: pointer;
-    width: 290px;
-    height: 32px;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    font-size: 15px;
+}
+
+.step h3 {
+    font-size: 40px;
+    margin: 10px 0;
     font-weight: 900;
-    padding: 2px 2px; 
-    transform: scale(1, 1.5);
-    margin-top: 50px;
-  
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.step p {
+    font-size: 15px;
+    /* margin-top: 20px; */
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    color: white;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left-section,
+    .right-section {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-section h1 {
+        font-size: 2.5em;
+    }
+
+    .left-section p {
+        font-size: 1em;
+    }
+
+    .step h2 {
+        font-size: 1.8em;
+    }
+
+    .step h3 {
+        font-size: 1.3em;
+    }
+
+    .step p {
+        font-size: 0.95em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-section h1 {
+        font-size: 2em;
+    }
+
+    .step h2 {
+        font-size: 1.5em;
+    }
+
+    .step h3 {
+        font-size: 1.2em;
+    }
+
+    .step p {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 12px;
+    }
 }

@@ -49,8 +49,8 @@
     background-color: #0766FF;
     color: white;
     cursor: pointer;
-    width: 260px;
-    height: 45px;
+    width: auto;
+    height: auto;
     border: none;
     border-radius: 30px;
     font-size: 15px;
@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #035B67;
+    background-color: #54725D;
     padding: 30px;
     border-radius: 30px;
     flex-direction: column;
@@ -143,8 +143,8 @@
     }
 
     .top-box button {
-        width: 200px;
-        height: 40px;
+        width: auto;
+        height: auto;
     }
 
     .bg {

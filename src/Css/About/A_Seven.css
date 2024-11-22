@@ -26,9 +26,10 @@
     gap: 40px;
 }
 .a-seven-main-handing h2{
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 80px;
+    font-weight: 800;
     color: white;
+    font-family:"zuume";
 }
 .a-seven-main-peragraph{
     display: flex;
@@ -76,5 +77,10 @@
 @media(max-width:710px){
     .a-seven-main-peragraph p{
         width: 100%;
+    }
+}
+@media  screen and (min-width:120px) and (max-width:768px){
+    .a-seven-image img{
+        height: auto;
     }
 }

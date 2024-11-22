@@ -19,10 +19,13 @@
 }
 .left-fifth-sec-item{
     width:360px;
+    height: 400px;
+    position: relative;
 }
 .left-fifth-sec-item img{
     width: 100%;
     border-radius: 30%;
+    position: absolute;
 }
 .right-fifth-sec-item{
  /* width: 700px;  */
@@ -60,7 +63,7 @@
 
 @media  screen and (min-width:200px) and (max-width:767px){
     .main-fifth{
-        margin-top: 600px;
+        margin-top: 250px;
         padding: 0px 0px;
     }
     .fifth{
@@ -70,8 +73,8 @@
         padding: 0px 0px;
     }    
     .left-fifth-sec-item{
-        width:400px;
-       margin-top: 50px;
+        /* width:400px; */
+       /* margin-top: 50px; */
        
          
      
@@ -96,12 +99,13 @@
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-fifth{
-        margin-top: 300px;
+        margin-top: 250px;
     }
     .fifth{
         gap: 0;
         flex-direction: column;
         background: none;
+        width: 500px;
     }    
     .left-fifth-sec-item{
         width:400px;
@@ -123,7 +127,7 @@
     }
 }
 
-@media  screen and (min-width:992px) and (max-width:1024px) { 
+@media  screen and (min-width:768px) and (max-width:1024px) { 
     .main-fifth{
         padding: 0px 0px;
     }
@@ -134,19 +138,19 @@
     }   
     .left-fifth-sec-item{
         /* width:400px; */
-        gap: 10px;
+        /* gap: 10px; */
      
     }
     .left-fifth-sec-item img{
         /* width: 100%; */
         border-radius: 30%;
     } 
-    .right-fifth-sec-item h1{
+    /* .right-fifth-sec-item h1{
         font-size: 40px;
     }
     .right-fifth-sec-item p{
         font-size: 16px;
-    }
+    } */
 }
 
 @media  screen and (min-width:1025px) and (max-width:1200px) {  

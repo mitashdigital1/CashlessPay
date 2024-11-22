@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../Css/Contact/Co_First.css'
 
 const Co_First = () => {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setIsPopupVisible(true);
+        setTimeout(() => setIsPopupVisible(false), 3000);
+    };
+
     return (
         <div >
             <div className="main-heading">
@@ -22,7 +30,7 @@ const Co_First = () => {
                 </div>
                 <div className='main-form'>
                     <h3>Send us a message</h3>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className='form-first-item'>
                             <input type="text" placeholder='Full name' />
                             <input type="email" placeholder='support@cashlesspay.com' />
@@ -47,11 +55,16 @@ const Co_First = () => {
                             <button>SUBMIT YOUR MESSAGE </button>
                         </div>
                     </form>
+                    {isPopupVisible && (
+                        <div className="popup-message">
+                            <p>Your application is submitted successfully!</p>
+                        </div>
+                    )}
 
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Co_First

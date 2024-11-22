@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Header from '../Components/Home/Header'
 import HeroSec from '../Components/Home/Hero_Section'
@@ -10,17 +10,21 @@ import SixthSec from '../Components/Home/Sixth_Section'
 import SevenSec from '../Components/Home/Seven_Section'
 import VideoSec from '../Components/Home/Video_Section'
 import FooterSec from '../Components/Home/Footer'
+import Eightsec from '../Components/Home/Eight_Section'
+
 // import Business from './Business'
 import Careers from './Careers'
- 
+ import Getstart from '../Components/Getstarted/Getstart'
  
 
 const Home = () => {
+  const[showlogin,setShowlogin]= useState(false);
   return (
+    <>
+    {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
     <div>
-     
-     <Header/>
-     <HeroSec/>
+     <Header setShowlogin={setShowlogin}/>
+     <HeroSec setShowlogin={setShowlogin}/>
 
      {/* <SecondSec/> */}
      {/* <ThredSec/>  */}
@@ -31,6 +35,8 @@ const Home = () => {
      <FifthSec/>
      <SixthSec/>
      <SevenSec/>
+     <Eightsec/>
+
 
 
      {/* <VideoSec/>  */}
@@ -39,6 +45,7 @@ const Home = () => {
      
 
    </div>
+   </>
   )
 }
 
