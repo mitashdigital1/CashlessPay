@@ -4,10 +4,10 @@
     justify-content: center;
     /* width: 100%; */
     padding: 20px 50px;
-    margin-top: 100px;
+    margin-top: 1px;
 }
 .forth{
-    max-width: 1400px;
+    max-width: 1150px;
     height: 500px;
     display: flex;
    justify-content: center;
@@ -74,79 +74,87 @@
 /* responsive */
  @media  screen and (min-width:200px) and (max-width:767px){
     .main-forth{
-        margin-top: 50px;
+        margin-top: 10%;
         padding: 0px 0px;
+
         /* overflow: hidden; */
     }
     .forth{
+        display: flex;
         flex-direction: column;
-        background: none;
-    gap: 0;
-    padding: 0px 0px;
-   
-   
+        background:none;
+        height: 100vh;
     }    
     .left-four-sec-item{
-        /* width:300px; */
-        margin-top: 300px;  
+        display: flex;
+        justify-content: center;
     }
     .left-four-sec-item img{
-       width: 350px;
-        border-radius: 30%;
-        margin-left: 20px;
-    } 
+          width: 70%;
+          height: 50vh;
+    }
     .right-four-sec-item{
-    
- 
+        padding-top: 10%;
+        margin-top: 20%;
+        display: flex;
+        width: 80%;
     }
     .right-four-sec-item h1{
         font-size: 40px;
         width: 300px;
-        
-  
     }
     .right-four-sec-item p{
         font-size: 17px;
-         width: 300px;
- 
+         width: 90%;
+     margin: 0 auto;
     }
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-forth{
-     margin-top: 200px;
-     gap: 0;
+        margin-top: 10%;
+        padding: 0px 0px;
+
+        /* overflow: hidden; */
     }
     .forth{
-        gap: 0;
+        display: flex;
         flex-direction: column;
-        background: none;
+        background:none;
+        height: 150vh;
     }    
     .left-four-sec-item{
-        /* width:400px; */
-       
-     
+        display: flex;
+        justify-content: center;
     }
     .left-four-sec-item img{
-         
-        border-radius: 30%;
-    } 
+          width: 70%;
+          height: 100vh;
+    }
+    .right-four-sec-item{
+        padding-top: 10%;
+        margin-top: 10%;
+        display: flex;
+        width: 80%;
+    }
     .right-four-sec-item h1{
-        font-size: 45px;
-        margin-left: 70px;
+        font-size: 40px;
+        width: 100%;
     }
     .right-four-sec-item p{
         font-size: 17px;
-        /* width: 70%; */
+         width: 90%;
+     margin: 0 auto;
     }
 }
 
-@media  screen and (min-width:992px) and (max-width:1024px) { 
+@media  screen and (min-width:991px) and (max-width:1024px) { 
     .main-forth{
         padding: 0px 0px;
     } 
     .forth{
         padding: 0px 0px;
         gap: 0px;
+        width: 95%;
     }  
     .left-four-sec-item{
         width:400px;

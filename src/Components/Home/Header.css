@@ -119,16 +119,16 @@ li {
   background-color: #035B67;
   border-radius: 10px;
   color: white;
-  width: 170px;
-  height: 30px;
+  width: 100px;
+  height: 20px;
   border: none;
   outline: none;
-  font-size: 16px;
-  padding: 0px 2px;
+  font-size: 12px;
+  padding: 0px 10px;
   cursor: pointer;
   transform: scale(1, 1.8);
   font-weight: 900;
-
+   margin-top: -10%;
 }
 
 .menu {

@@ -1,6 +1,11 @@
 import React from 'react'
 import '../../Css/Getstarted/Getstart.css'
+
+import { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
+
 const Getstart = ({setShowlogin}) => {
+  const [selected, setSelected] = useState("");
   return (
     <div className='login-popup'>
         <form className='login-popup-container'>
@@ -17,8 +22,16 @@ const Getstart = ({setShowlogin}) => {
             <label htmlFor="mobile">Mobile</label>
             <input id='mobile' type="text" placeholder='Moblie No'  required/>
             <label htmlFor="country">Country</label>
-            <input type="text" placeholder='Country' id='country' />
-          </div>
+            <ReactFlagsSelect 
+            selected={selected}
+            onSelect={(code) => setSelected(code)}
+            placeholder ="Select Country"
+                className='menu-flag'
+                selectButtonClassName="menu-flags-button"
+                searchable
+                searchPlaceholder="Search countries"
+             />
+            </div>
           <div className='login-popup-btn'>
             <button>Get The Link</button>
           </div>

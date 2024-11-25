@@ -27,7 +27,7 @@
 .C_section-right{
     display: flex;
     width: 30%;
-    margin-right: 20px;
+    margin-right: 70px;
   flex-direction: column;
 }
 .C_section-right span{

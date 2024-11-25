@@ -4,11 +4,11 @@
     justify-content: center;
     /* width: 100%; */
     padding: 20px 50px;
-    margin-top: 100px;
+    margin-top: 10px;
     
 }
 .seven{
-    max-width: 1400px;
+    width: 1150px;
     height: 500px;
     display: flex;
    justify-content: center;
@@ -59,12 +59,12 @@
 /* responsive */
   @media  screen and (min-width:200px) and (max-width:767px){
     .main-seven{
-        margin-top: 250px;
+        margin-top: 20%;
         padding: 0px 0px;
-        
+        margin-bottom: 20%;
     }
     .seven{
-        flex-direction: column;
+        flex-direction: column-reverse;
         background: none;
        gap: 0;
        padding: 0px 0px;
@@ -79,7 +79,7 @@
          margin-left: 20px;
     } 
     .right-seven-sec-item{
-
+       width: 80%;
      
     }
     .right-seven-sec-item h1{
@@ -88,18 +88,19 @@
     }
     .right-seven-sec-item p{
         font-size: 17px;
-        width: 300px;
+        width: 90%;
         margin-left: 20px;
         
     }
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-seven{
-        margin-top: 250px;
+        margin-top: 10%;
+        margin-bottom: 15%;
     }
     .seven{
         gap: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 500px;
         background: none;
     }    
@@ -126,14 +127,15 @@
     }
 }
 
-@media  screen and (min-width:992px) and (max-width:1024px) { 
+@media  screen and (min-width:991px) and (max-width:1024px) { 
     .main-seven{
         padding: 0px 0px;
+        margin-top: 5%;
       }
       .seven{
           padding: 0px 0px;
           gap: 0px;
-          width: 1000px;
+          width: 95%;
            
       }
     .left-seven-sec-item img{
@@ -146,10 +148,12 @@
 @media  screen and (min-width:1025px) and (max-width:1200px) {  
     .main-seven{
       padding: 0px 0px;
+      margin-top: 5%;
     }
     .seven{
         padding: 10px 0px;
         gap: 0px;
+        width: 95%;
          
     }
 }  

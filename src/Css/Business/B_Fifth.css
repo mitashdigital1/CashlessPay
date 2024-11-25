@@ -7,7 +7,7 @@
     max-width: 1200px;
     margin: 0 auto;
     background-color: #54725D;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .left-section {
@@ -16,8 +16,11 @@
 }
 
 .left-section h1 {
-    font-size: 90px;
     font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 90px;
+    /* font-weight: 900; */
     line-height: 1.2;
     margin-bottom: 20px;
     color: white;
@@ -38,25 +41,30 @@
 
 .step {
     margin-bottom: 30px;
+    padding-top: 15px;
 
 }
 
 .blckline {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    padding-top: 15px;
     border-bottom: 2px solid white;
 }
 
-.step h2 {
-    font-size: 2em;
+.step .points {
+    font-size: 4em;
     font-weight: bold;
     color: white;
+    float: left;
+    margin: 5px;
 }
 
-.step h3 {
-    font-size: 40px;
+.step h4 {
+    font-size: 1.5rem;
     margin: 10px 0;
+    padding-left: 90px;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 100%;
     letter-spacing: 1px;
     color: white;
     letter-spacing: 3px;
@@ -64,6 +72,8 @@
 
 .step p {
     font-size: 15px;
+    padding-left: 90px;
+    letter-spacing: 1px;
     /* margin-top: 20px; */
     font-family: 'Uncut Sans';
     font-weight: normal;
@@ -114,7 +124,7 @@ button:hover {
         font-size: 1.8em;
     }
 
-    .step h3 {
+    .step h4 {
         font-size: 1.3em;
     }
 
@@ -137,7 +147,7 @@ button:hover {
         font-size: 1.5em;
     }
 
-    .step h3 {
+    .step h4 {
         font-size: 1.2em;
     }
 

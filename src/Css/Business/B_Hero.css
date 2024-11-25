@@ -60,6 +60,7 @@
 
 .bg {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: #54725D;
@@ -89,6 +90,7 @@
     font-weight: 500;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .img-handing p {
@@ -97,6 +99,7 @@
     font-weight: 400;
     color: white;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 /* Responsive Styles */

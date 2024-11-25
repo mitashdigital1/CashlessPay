@@ -3,7 +3,7 @@
  import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Components import
- 
+import ScrollToTop from './ScrollToTop';
 
 // Screen
  import Business from './Screens/Business'
@@ -21,6 +21,7 @@ import Careers from './Screens/Careers'
      <div>
        {/* <Home/> */}
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' index element={<Home/>}/>
         <Route path='businesspay' element={<Business/>}/>

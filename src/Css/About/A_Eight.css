@@ -72,4 +72,11 @@
         font-size: 19px;
     }
 }
-
+@media  screen and (min-width:120px) and (max-width:768px){
+    .a-eight{
+        overflow-x: hidden;
+    }
+    .a-eight-item p{
+        width: 130%;
+    }
+}

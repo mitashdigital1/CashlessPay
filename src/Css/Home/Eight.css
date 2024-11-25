@@ -18,6 +18,10 @@
     height: auto;
     gap: 100px;
 }
+.eight :hover{
+    background-color: #54725D;
+    border-radius: 20px;
+}
 
 /* Individual column */
 .eight div {

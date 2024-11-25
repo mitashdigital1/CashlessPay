@@ -13,6 +13,7 @@
     padding: 50px 40px;
     border-radius: 30px;
     gap: 40px;
+    width: 95%;
 }
 .a-first-part{
     display: flex;
@@ -66,7 +67,7 @@
 
 @media (max-width:1034px){
     .a-main-fourth{
-        width: 100%;
+        width: 95%;
     }
 }
 @media(max-width:839px){
