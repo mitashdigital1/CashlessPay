@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../Components/Home/Header'
 import Footer from '../Components/Home/Footer'
 import C_Hero from '../Components/Careere/C_Hero'
@@ -9,11 +9,17 @@ import C_second_section from '../Components/Careere/C_secondsection'
 import C_thrid_section from '../Components/Careere/C_thirdsection'
 import C_fourth_section from '../Components/Careere/C_fourthsection'
 import C_fifth_section from '../Components/Careere/C_fifthsection'
+import Getstart from '../Components/Getstarted/Getstart'
+
 const Careers = () => {
+  const[showlogin,setShowlogin]= useState(false);
+
   return (
     <>
+        {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
+
          <div>
-        <Header/>
+         <Header setShowlogin={setShowlogin}/>
       
         <C_Hero/>
         <C_first_ssection/>

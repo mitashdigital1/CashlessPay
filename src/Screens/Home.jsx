@@ -14,7 +14,7 @@ import Eightsec from '../Components/Home/Eight_Section'
 
 // import Business from './Business'
 import Careers from './Careers'
- import Getstart from '../Components/Getstarted/Getstart'
+import Getstart from '../Components/Getstarted/Getstart'
  
 
 const Home = () => {

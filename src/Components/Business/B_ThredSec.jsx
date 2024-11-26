@@ -6,17 +6,16 @@ const B_ThredSec = () => {
     <div className="thrad">
       <div className="main-thrad">
         <div className="haanding">
-          <h1>Global Reach</h1>
-          <h1>With a Local Touch</h1>
-          <p>
-            Enhance conversions and streamline your business with global pay-ins and pay-outs. 
-            Our payment solution is designed to support your growth, empowering your business to 
-            thrive on a global scale while providing a seamless local experience.
-          </p>
+          <p>Payment Solutions</p>
+          <h2> Global Reach With a Local Touch</h2>
+          <p>Increase conversion and optimize your business with global 
+            pay-ins and pay-outs. Focus on growth with our payment solution built for your business to thrive at a global scale.
+           </p>
+           <button>Learn more</button>
         </div>
         <div className="imagee">
           <img
-            src="https://blaze.money/_next/image?url=%2Fimages%2Fbusiness%2Fblaze-payments-integration.png&w=1080&q=75"
+            src="https://lili.co/wp-content/uploads/2023/01/Homepage_Hero_Image_2008x1792-e1688377052449.png"
             alt="Payment Integration"
           />
         </div>

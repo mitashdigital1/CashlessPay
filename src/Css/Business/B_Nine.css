@@ -1,0 +1,115 @@
+.Nine{
+    display: flex;
+    justify-content: center;
+}
+.main-Nine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    width: 85%;
+}
+.Nine-first{
+    margin-top: 6%;
+    width: 50%;
+    align-items: center;
+}
+.Nine-first h1{
+    color: white;
+    font-size: 75px;
+    letter-spacing: 1px;
+}
+.Nine-cardgroup{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.Nine-card{
+    background-color: black;
+    width: 250px;
+    height: 480px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.Nine-card:hover{
+    opacity: 0.7;
+   
+}
+.Nine-card .img{
+    padding: 0px 0 0 20px;
+}
+.Nine-card .img img{
+    width: 90%;
+    height: 200px;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+.Nine-card span{
+    color: #21E7A6;
+    font-family: 'Uncut Sans';
+    font-size: 14px;
+    padding-left: 30px;
+}
+ #more:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.Nine-card h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.Nine-card p{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Uncut Sans';
+    font-size: 14px;
+    padding:0 30px 20px 30px;
+}
+.sec-cardgroup{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+.sec-card{
+    background-color: black;
+    width: 530px;
+    height: 580px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sec-card:hover{
+    opacity: 0.8;
+}
+.sec-card .img{
+    padding: 0px 0 0 20px;
+}
+.sec-card .img img{
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+}
+.sec-card span{
+    color: #21E7A6;
+    font-family: 'Uncut Sans';
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+
+.sec-card p{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Uncut Sans';
+    font-size: 22px;
+    padding:0 30px 20px 30px;
+}

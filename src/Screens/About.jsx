@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../Components/Home/Header'
 import Footer from '../Components/Home/Footer'
 import A_First from '../Components/About/A_First'
@@ -10,13 +10,18 @@ import A_Fifth from '../Components/About/A_Fifth'
 import A_Sixth from '../Components/About/A_Sixth'
 import A_Seven from '../Components/About/A_Seven'
 import A_Eight from '../Components/About/A_Eight'
+import Getstart from '../Components/Getstarted/Getstart'
 
 
 const About = () => {
+  const[showlogin,setShowlogin]= useState(false);
+
   return (
-    <>
+    <> 
+       {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
+
       <div>
-        <Header/>
+      <Header setShowlogin={setShowlogin}/>
       
         <A_First/>
         {/* <A_Handing/> */}

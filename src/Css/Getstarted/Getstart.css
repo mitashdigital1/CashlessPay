@@ -63,17 +63,21 @@ font-family: 'Uncut Sans';
     padding: 12px;
     border-radius: 8px;
 }
-.menu-flags-button{
-    outline: none;
-    border: 1px solid #c9c9c9;
-    border-radius:8px;
-    margin-top: 4px;
-    width: 80%;
-    align-content: start;
-    font-size: 20px;
+/* .custom-flag-select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  */
+ 
+  .menu-flags-button{
     height: 40px;
-} 
-
+    margin-top: 3px;
+  }
+.menu-flags-button:hover{
+    background-color: white;
+}
+  
 .login-popup-btn button{
     border: none;
     width: 100%;
@@ -98,11 +102,11 @@ font-family: 'Uncut Sans';
  margin-bottom: 8px;
 }
 
-.login-popup-container span{
+/* .login-popup-container span{
     font-size: 16px;
     font-weight: 500;
     margin-top: -5%;
-}
+} */
 @media  screen and (min-width:200px) and (max-width:770px){
     .login-popup-container{
         position: fixed;

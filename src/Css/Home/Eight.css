@@ -16,7 +16,7 @@
     max-width: 1200px;
     width: 100%;
     height: auto;
-    gap: 100px;
+    gap: 80px;
 }
 .eight :hover{
     background-color: #54725D;
@@ -63,13 +63,14 @@
 @media (max-width: 768px) {
     .main-eight{
         background: none;
+        margin-top: 50%;
     }
     .eight {
         flex-direction: column;
         align-items: center;
     }
 
-    .eight div {
+    /* .eight div {
         margin-bottom: 20px;
-    }
+    } */
 }

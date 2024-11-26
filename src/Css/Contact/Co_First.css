@@ -18,6 +18,9 @@
     gap: 50px;
     padding: 0 50px;
     box-sizing: border-box;
+    max-width: 1250px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .co-main-first {

@@ -22,15 +22,21 @@ const Getstart = ({setShowlogin}) => {
             <label htmlFor="mobile">Mobile</label>
             <input id='mobile' type="text" placeholder='Moblie No'  required/>
             <label htmlFor="country">Country</label>
-            <ReactFlagsSelect 
-            selected={selected}
-            onSelect={(code) => setSelected(code)}
-            placeholder ="Select Country"
-                className='menu-flag'
-                selectButtonClassName="menu-flags-button"
-                searchable
-                searchPlaceholder="Search countries"
-             />
+        
+
+      <ReactFlagsSelect
+        selected={"NZ"}
+        onSelect={(code) => setSelected(code)}
+        searchable
+        searchPlaceholder="Search countries"
+        className="custom-flag-select"
+        selectButtonClassName="menu-flags-button"
+        alignOptionsToLeft
+        
+        countries={["NZ", "ID", "TH", "VN", "MY", "PH","SG","MM","KH","AU"]}
+      />
+    
+        
             </div>
           <div className='login-popup-btn'>
             <button>Get The Link</button>
@@ -39,7 +45,7 @@ const Getstart = ({setShowlogin}) => {
             <p>By signing up, you agree to CashlessPay 
             Early Access Terms of Use and Privacy Policy</p>
           </div>
-          <span>sign in here</span>
+          <span style={{marginTop:"-15px"}}>sign in here</span>
         </form>
         
     </div>
