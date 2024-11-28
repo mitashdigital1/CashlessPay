@@ -7,12 +7,21 @@ import Orange from '..//..//assets/a/orange.png'
 import Yellow from '..//..//assets/a/yellow.png'
 import Lightgreen from '..//..//assets/a/light-green.png'
 import Phone from '..//..//assets/a/phone.png'
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 
 const Hero_Section = ({setShowlogin}) => {
+    const{t,i18n} =useTranslation();
  const [text] = useTypewriter({
-    words:['TRAVELLERS', 'FAMILIES', 'STUDENTS', 
-        'FREELANCERS', 'ENTREPRENEURS', 'SMEs'],
+    words: [
+        t("travellers"),   // This will translate to the "travellers" key in your i18n JSON
+        t("families"),      // This will translate to the "families" key
+        t("students"),      // This will translate to the "students" key
+        t("freelancers"),   // This will translate to the "freelancers" key
+        t("entrepreneurs"), // This will translate to the "entrepreneurs" key
+        t("smes")          // This will translate to the "smes" key
+      ],
     loop:{},
     typeSpeed:120,
     deleteSpeed:80,
@@ -31,27 +40,26 @@ const Hero_Section = ({setShowlogin}) => {
                 <div className='hero-sec'>
                     <div className="hero-left-item">
                         <div className='main-heading'>
-                            <h1 className='h11'>Instant, Secure </h1>
-                            <h1> Cross-Border</h1>
-                            <h1>WALLET </h1>
-                            <h1>EMPOWERING</h1>
+                            <h1 className='h11'>{t("line1")}  </h1>
+                            <h1>{t("line2")}</h1>
+                            <h1>{t("line3")}</h1>
+                            <h1>{t("line4")}</h1>
                             <h1 className='h1'>{text}&nbsp;</h1>    
                         </div>
                         <div className='hide'>
                              <div className='hide-item'>
-                             <h1>Instant, Secure Cross-Border WALLET 
-                             EMPOWERING
+                             <h1>{t("heading-1")}
                                   </h1>   
                              <h1 id='h1'>{text}&nbsp;</h1>
                              </div>
                             </div>
                         <div className="peragrph">
-                            <p id='p'>Experience seamless international transactions with CASHLESSPAY – your gateway to fast, affordable, and secure money transfers for both individuals and businesses.
+                            <p id='p'>{t("description")}
                             </p>
                             
                         </div>
                         <div className='btn-1'>
-                            <button onClick={()=>setShowlogin(true)}>Get Started</button>
+                            <button onClick={()=>setShowlogin(true)}>{t("button_text")}</button>
                         </div>
                     </div>
 

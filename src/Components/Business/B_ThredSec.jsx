@@ -1,17 +1,17 @@
 import React from 'react';
 import '../../Css/Business/B_Thred.css';
-
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 const B_ThredSec = () => {
+  const{t,i18n} =useTranslation();
   return (
     <div className="thrad">
       <div className="main-thrad">
         <div className="haanding">
-          <p>Payment Solutions</p>
-          <h2> Global Reach With a Local Touch</h2>
-          <p>Increase conversion and optimize your business with global 
-            pay-ins and pay-outs. Focus on growth with our payment solution built for your business to thrive at a global scale.
-           </p>
-           <button>Learn more</button>
+          <p>{t("B-t-ln1")}</p>
+          <h2>{t("B-t-ln2")} </h2>
+          <p>{t("B-t-ln3")} </p>
+           <button>{t("B-t-ln4")}</button>
         </div>
         <div className="imagee">
           <img

@@ -1,84 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins&display=swap');
-.a-fifth{
+.a-fifth {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    font-family: "Bebas Neue", sans-serif;
+    margin-top: 20px;
+    /* max-width: 1250px; */
+    /* padding: 0 15px; */
 }
-.a-main-fifth{
+
+.a-main-fifth {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 30px;
+    padding: 50px 40px;
     border-radius: 30px;
-    gap: 30px;
+    gap: 40px;
     width: 95%;
+    max-width: 1200px;
+    /* background-color: #47663B; */
+    flex-wrap: wrap; 
 }
-.a-first-fifth-part{
+
+.a-first-fifth-part {
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
 }
-.a-first-fifth-handing h2{
-    font-size: 80px;
-    font-weight: 800;
+
+.a-first-fifth-handing h2 {
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
     color: white;
-    font-family:"zuume";
 }
-.a-first-fifth-paragraph{
- display: flex;
- flex-direction: column;
- gap: 20px;
+
+.a-first-fifth-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.a-first-fifth-paragraph h3{
-    font-size: 23px;
+
+.a-first-fifth-paragraph h3 {
+    font-size: 30px;
     font-family: 'Uncut Sans';
     font-weight: 300;
     color: white;
 }
-.a-first-fifth-paragraph p{
-    font-size: 18px;
+
+.a-first-fifth-paragraph p {
+    font-size: 20px;
     font-family: 'Uncut Sans';
     font-weight: normal;
-    width: 500px;
     color: white;
+    letter-spacing: 0.4px;
+    /* width: 100%; */
+    max-width: 500px;
 }
 
-.a-second-fifth-part{
-    width: 680px;
+.a-second-fifth-part {
+    flex: 1;
+    max-width: 640px;
 }
-.a-second-fifth-part img{
-    width: 100%;
-    height: 100vh;
+
+.a-second-fifth-part img {
+    width: 100%; 
+    height: auto;
     border-radius: 30px;
+    object-fit: cover;
+    max-height: 80vh; 
 }
 
-@media (max-width:1034px){
-    .a-main-fifth{
+/* Responsive Adjustments */
+@media (max-width: 1034px) {
+    .a-main-fifth {
+        gap: 30px; 
+    }
+}
+
+@media (max-width: 839px) {
+    .a-main-fifth {
+        flex-direction: column-reverse; 
+        gap: 20px;
+    }
+
+    .a-second-fifth-part {
+        max-width: 100%; 
+    }
+
+    .a-first-fifth-handing h2 {
+        font-size: 50px;
+    }
+
+    .a-first-fifth-paragraph h3 {
+        font-size: 24px; 
+    }
+
+    .a-first-fifth-paragraph p {
+        font-size: 16px; 
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .a-main-fifth {
+        padding: 30px 20px; 
+    }
+
+    .a-second-fifth-part img {
+        max-height: 60vh;
+    }
+
+    .a-first-fifth-handing h2 {
+        font-size: 40px; 
+    }
+
+    .a-first-fifth-paragraph p {
+        font-size: 15px; 
+        text-align: justify;
         width: 100%;
     }
 }
-@media(max-width:839px){
-    .a-main-fifth{
-        width: 80%;
-        display: flex;
-        flex-direction: column-reverse;
 
+@media (max-width: 480px) {
+    .a-main-fifth {
+        gap: 10px; 
     }
-    .a-second-fifth-part{
-        width: 99%;
+
+    .a-second-fifth-part img {
+        max-height: 50vh;
     }
-}
-@media(max-width:710px){
-    .a-first-fifth-paragraph p{
-        width: 100%;
+
+    .a-first-fifth-handing h2 {
+        font-size: 35px; 
     }
-}
-@media  screen and (min-width:120px) and (max-width:768px){
-    .a-second-fifth-part img{
-        height: auto;
+
+    .a-first-fifth-paragraph p {
+        font-size: 14px; 
+        text-align: justify;
     }
 }

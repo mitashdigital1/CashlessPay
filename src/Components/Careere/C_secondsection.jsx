@@ -1,25 +1,26 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 const C_second_section = () => {
+    const{t,i18n} =useTranslation();
   return (
     <div className='C_section'>
         <div className='C_section-content' >
         <div className="C_section-left">
-            <h1>IN-HOUSE CONTENT CREATOR</h1>
-            <p>Create engaging content for digital nomads and expats. Work with marketing to tell CashlessPay's story and promote our payment solutions.
-                Enjoy remote flexibility,equity, and the chance to shape our brand voice.
+            <h1>{t("C-s-ln1")}</h1>
+            <p>{t("C-s-ln2")}
             </p>
         </div>
         <div className="C_section-right">
         <span></span>    
             <div className='uper'>
-                <h3>Location</h3>
-                <p>CDMX/Remote/Contract</p>
+                <h3>{t("C-s-ln3")}</h3>
+                <p>{t("C-s-ln4")}</p>
                 </div>
                 <span></span>        
         <div className='down'>
-            <p>Figma</p>
-        <p>Adobe Suite</p>
+            <p>{t("C-s-ln5")}</p>
+        <p>{t("C-s-ln6")}</p>
         </div>
             
         </div>

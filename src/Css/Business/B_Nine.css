@@ -1,115 +1,284 @@
-.Nine{
+.Nine {
     display: flex;
     justify-content: center;
-}
-.main-Nine{
+    /* padding: 20px; */
+  }
+  
+  .main-Nine {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 45px;
     width: 85%;
-}
-.Nine-first{
+    max-width: 1200px;
+  }
+  
+  .Nine-first {
     margin-top: 6%;
     width: 50%;
     align-items: center;
-}
-.Nine-first h1{
+  }
+  
+  .Nine-first h1 {
     color: white;
-    font-size: 75px;
+    font-size: 90px;
     letter-spacing: 1px;
-}
-.Nine-cardgroup{
+    line-height: 1.2;
+  }
+  
+  .Nine-cardgroup {
     display: flex;
     justify-content: center;
     gap: 20px;
     width: 100%;
-}
-.Nine-card{
+    flex-wrap: wrap;
+  }
+  
+  .Nine-card {
     background-color: black;
-    width: 250px;
-    height: 480px;
+    width: 240px;
+    height: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-}
-.Nine-card:hover{
+    transition: opacity 0.3s ease;
+  }
+  
+  .Nine-card:hover {
     opacity: 0.7;
-   
-}
-.Nine-card .img{
+  }
+  
+  .Nine-card .img {
     padding: 0px 0 0 20px;
-}
-.Nine-card .img img{
+  }
+  
+  .Nine-card .img img {
     width: 90%;
     height: 200px;
     opacity: 0.7;
     border-radius: 20px;
-}
-.Nine-card span{
+  }
+  
+  .Nine-card span {
     color: #21E7A6;
     font-family: 'Uncut Sans';
     font-size: 14px;
     padding-left: 30px;
-}
- #more:hover{
+  }
+  
+  #more:hover {
     text-decoration: underline;
     opacity: 1;
-}
-.Nine-card h3{
-    font-size: 25px;
+  }
+  
+  .Nine-card h3 {
+    font-size: 30px;
     color: white;
     font-weight: 600;
+    font-family: 'Uncut Sans';
     padding-left: 30px;
-}
-.Nine-card p{
+  }
+  
+  .Nine-card p {
     color: white;
     font-weight: lighter;
     font-family: 'Uncut Sans';
     font-size: 14px;
-    padding:0 30px 20px 30px;
-}
-.sec-cardgroup{
+    padding: 0 30px 20px 30px;
+  }
+  
+  .sec-cardgroup {
     display: flex;
+    justify-content: center;
     gap: 20px;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 40px;
     margin-bottom: 6%;
-}
-.sec-card{
+    flex-wrap: wrap;
+  }
+  
+  .sec-card {
     background-color: black;
-    width: 530px;
+    width: 500px;
     height: 580px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.sec-card:hover{
+  }
+  
+  .sec-card:hover {
     opacity: 0.8;
-}
-.sec-card .img{
+  }
+  
+  .sec-card .img {
     padding: 0px 0 0 20px;
-}
-.sec-card .img img{
+  }
+  
+  .sec-card .img img {
     width: 95%;
     height: 300px;
     border-radius: 20px;
-}
-.sec-card span{
+  }
+  
+  .sec-card span {
     color: #21E7A6;
     font-family: 'Uncut Sans';
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 30px;
-}
-
-
-.sec-card p{
+  }
+  
+  .sec-card p {
     color: white;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     font-family: 'Uncut Sans';
-    font-size: 22px;
-    padding:0 30px 20px 30px;
-}
+    font-weight: normal;
+    font-size: 20px;
+    padding: 0 30px 20px 30px;
+  }
+  
+
+  
+  @media (max-width: 1024px) {
+    .Nine-first h1 {
+      font-size: 60px;
+    }
+  
+    .Nine-card {
+      width: 220px;
+      height: auto;
+    }
+  
+    .sec-card {
+      width: 450px;
+      height: 500px;
+    }
+  
+    .Nine-cardgroup {
+      gap: 15px;
+    }
+  
+    .sec-cardgroup {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Nine-first h1 {
+      font-size: 45px;
+    }
+  
+    .Nine-card {
+      width: 200px;
+      height: auto;
+    }
+  
+    .sec-card {
+      width: 380px;
+      height: auto;
+    }
+  
+    .Nine-cardgroup {
+      gap: 10px;
+      /* flex-direction: column; */
+    }
+  
+    .sec-cardgroup {
+      gap: 30px;
+      /* flex-direction: column; */
+    }
+  
+    .Nine-first {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Nine-first h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .Nine-card {
+      width: 180px;
+      height: auto;
+    }
+  
+    .sec-card {
+      width: 320px;
+      height: auto;
+    }
+  
+    .Nine-card span {
+      font-size: 12px;
+    }
+  
+    .Nine-card h3 {
+      font-size: 18px;
+    }
+  
+    .Nine-card p {
+      font-size: 12px;
+    }
+  
+    .sec-card span {
+      font-size: 16px;
+    }
+  
+    .sec-card p {
+      font-size: 18px;
+    }
+  
+    .Nine-cardgroup {
+      gap: 8px;
+      /* flex-direction: column; */
+    }
+  
+    .sec-cardgroup {
+      gap: 30px;
+      /* flex-direction: column; */
+    }
+    .sec-card {
+        width: auto;
+        height: auto;
+      }
+  }
+  
+  @media (max-width: 320px) {
+    .Nine-first h1 {
+      font-size: 28px;
+    }
+  
+    .Nine-card {
+      width: 160px;
+      height: auto;
+    }
+  
+    .sec-card {
+      width: 280px;
+      height: auto;
+    }
+  
+    .Nine-card h3 {
+      font-size: 16px;
+    }
+  
+    .Nine-card p {
+      font-size: 10px;
+    }
+  
+    .sec-card span {
+      font-size: 14px;
+    }
+  
+    .sec-card p {
+      font-size: 16px;
+    }
+    .sec-card {
+        width: auto;
+        height: auto;
+      }
+  }
+  

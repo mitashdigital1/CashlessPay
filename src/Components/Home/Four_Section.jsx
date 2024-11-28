@@ -6,8 +6,11 @@ import '../../Css/Home/Forth.css'
 import one from '..//..//assets/b/1.png'
 import two from '..//..//assets/b/2.png'
 import three from '..//..//assets/b/raw.png'
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Four_Section = () => {
+  const{t,i18n} =useTranslation();
    useEffect(() => {
       // Initialize AOS
       AOS.init({
@@ -28,9 +31,8 @@ const Four_Section = () => {
             <img src={two} alt="" data-aos="fade-left"/>
          </div>
          <div className="right-four-sec-item">
-            <h1>Send and Request Money Easily with CASHLESSPAY</h1>
-            <p>With CASHLESSPAY, sending and requesting money is a breeze—no account required for the other person. Whether you’re splitting a 
-              dinner bill, covering travel costs, or supporting family overseas, CASHLESSPAY lets you connect with anyone on your contact list for quick, secure payments that simplify your life.</p>
+            <h1>{t("four-line1")}</h1>
+            <p>{t("four-line2")}</p>
          </div>
         </div>
        </div>

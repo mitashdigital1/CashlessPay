@@ -4,8 +4,11 @@ import "aos/dist/aos.css";
 import '../../Css/Home/Sixth.css'
 import Card from '..//..//assets/c/card.png'
 import Mobile from '..//..//assets/c/mobile.png'
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Sixth_Section = () => {
+  const{t,i18n} =useTranslation();
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -26,8 +29,8 @@ const Sixth_Section = () => {
             <img src={Card} alt="" data-aos="fade-right"/>
          </div>
          <div className="right-sixth-sec-item">
-            <h1>Spend Instantly or Withdraw to Your Bank Account</h1>
-            <p>Easily use your balance anywhere Visa is accepted worldwide. Pay with Apple Pay or Google Pay for quick, contactless purchases, or transfer funds from CASHLESSPAY directly to your bank account for easy access.</p>
+            <h1>{t("sixth-line1")}</h1>
+            <p>{t("sixth-line2")}</p>
          </div>
         </div>
        </div>

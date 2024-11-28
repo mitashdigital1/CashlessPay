@@ -3,48 +3,50 @@ import '../../Css/Home/Footer.css'
 import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import LogoFoter from "../../assets/Your paragraph text.png"
-
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    const{t,i18n} =useTranslation();
     return (
         <>
             <div className='main-footer'>
                 <div className='line'></div>
                 <div className='footer'>
                     <div className="nav-first-item">
-                        <p>Company</p>
-                        <a href="http://localhost:5173/">PersonalPay</a>
-                        <a href="http://localhost:5173/businesspay">BusinessPay</a>
-                        <a href="http://localhost:5173/about">About</a>
-                        <a href="http://localhost:5173/careers">Careers</a>
-                        <a href="http://localhost:5173/contact">Contact</a>
+                        <p>{t("Fo-ln1")}</p>
+                        <a href="http://localhost:5173/">{t("Fo-ln2")}</a>
+                        <a href="http://localhost:5173/businesspay">{t("Fo-ln3")}</a>
+                        <a href="http://localhost:5173/about">{t("Fo-ln4")}</a>
+                        <a href="http://localhost:5173/careers">{t("Fo-ln5")}</a>
+                        <a href="http://localhost:5173/contact">{t("Fo-ln6")}</a>
                     </div>
 
                     <div className="nav-first-item">
-                        <p>Cashlesspay</p>
-                        <a href="#">consectetur</a>
-                        <a href="#">obcaecati</a>
-                        <a href="#">consequuntur</a>
-                        <a href="#">nostrum</a>
-                        <a href="#">itaque</a>
-                        <a href="#"> sapiente</a>
-                        <a href="#">reiciendis</a>
-                        <a href="#">deserunt</a>
-
-                    </div>
-
-                    <div className="nav-first-item">
-                        <p>Resources</p>
-                        <a href="#">lorem</a>
-                        <a href="#">Terms and Conditions</a>
-                        <a href="#">Privacy Policy</a>
+                        <p>{t("Fo-ln7")}</p>
+                        <a href="#">{t("Fo-ln8")}</a>
+                        <a href="#">{t("Fo-ln9")}</a>
+                        <a href="#">{t("Fo-ln10")}</a>
+                        <a href="#">{t("Fo-ln11")}</a>
+                        <a href="#">{t("Fo-ln12")}</a>
+                        <a href="#"> {t("Fo-ln13")}</a>
+                        <a href="#">{t("Fo-ln14")}</a>
+                        <a href="#">{t("Fo-ln15")}</a>
 
                     </div>
 
                     <div className="nav-first-item">
-                        <p>Help</p>
-                        <a href="#">lorem</a>
-                        <a href="#">lorem</a>
+                        <p>{t("Fo-ln16")}</p>
+                        <a href="#">{t("Fo-ln17")}</a>
+                        <a href="#">{t("Fo-ln18")}</a>
+                        <a href="#">{t("Fo-ln19")}</a>
+
+                    </div>
+
+                    <div className="nav-first-item">
+                        <p>{t("Fo-ln20")}</p>
+                        <a href="#">{t("Fo-ln21")}</a>
+                        <a href="#">{t("Fo-ln22")}</a>
 
                     </div>
 
@@ -64,7 +66,7 @@ const Footer = () => {
                 </div>
                 <div className='line'></div>
                 <div className='footer-end'>
-                    <span>Copyright © 2024 CashlessPay. We’re committed to providing you with a secure and seamless experience. Reach out anytime, and our team will get back to you as soon as possible.</span>
+                    <span>{t("Fo-ln23")}</span>
                 </div>
 
                 {/* <div className='footer-thred'>

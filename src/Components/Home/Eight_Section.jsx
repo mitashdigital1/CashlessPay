@@ -1,23 +1,26 @@
 import React from 'react'
 
 import '../../Css/Home/Eight.css'
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Eight_Section = () => {
+    const{t,i18n} =useTranslation();
     return (
         <>
             <div className='main-eight'>
                 <div className='eight'>
                     <div className="eight-one">
-                        <h5>GLOBAL</h5>
-                        <p>We are launching in Latin America and the US, and will soon be global. Pay in any currency, anywhere in the world.</p>
+                        <h5>{t("eight-ln1")}</h5>
+                        <p>{t("eight-ln2")}</p>
                     </div>
                     <div className="eight-two">
-                        <h5>INSTANT</h5>
-                        <p>Send and receive funds to your account in seconds. NO more waiting days for your money to arrive.</p>
+                        <h5>{t("eight-ln3")}</h5>
+                        <p>{t("eight-ln4")}</p>
                     </div>
                     <div className="eight-three">
-                        <h5>EASY</h5>
-                        <p>Find friends by phone number, email, Instagram, or by scanning a QR code. No more account numbers.</p>
+                        <h5>{t("eight-ln5")}</h5>
+                        <p>{t("eight-ln6")}</p>
                     </div>
                 </div>
             </div>

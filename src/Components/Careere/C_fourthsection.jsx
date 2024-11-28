@@ -1,27 +1,29 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 const C_fourth_section = () => {
+  const{t,i18n} =useTranslation();
   return (
     <><div className='C_section'>
     <div className='C_section-content' >
     <div className="C_section-left">
-        <h1>DATA ANALYST</h1>
-        <p>Use data to drive CashlessPay's strategies.Analyze user behavior and market trends to optimize our cross-border solutions. Work remotely, collaborate across teams, and make data-driven impact on our global expansion.
+        <h1>{t("C-four-ln1")}</h1>
+        <p>{t("C-four-ln2")}
         </p>
     </div>
     <div className="C_section-right">
     <span></span>    
         <div className='uper'>
-            <h3>Location</h3>
-            <p>CDMX/Remote/Full-time</p>
+            <h3>{t("C-four-ln3")}</h3>
+            <p>{t("C-four-ln4")}</p>
             </div>
             <span></span>        
     <div className='down'>
-        <p>SQL</p>
-    <p>Excel</p>
-    <p>Data visualization</p>
-    <p>Tableau</p>
-    <p>Power BI</p>
+        <p>{t("C-four-ln5")}</p>
+    <p>{t("C-four-ln6")}</p>
+    <p>{t("C-four-ln7")}</p>
+    <p>{t("C-four-ln8")}</p>
+    <p>{t("C-four-ln9")}</p>
     </div>
         
     </div>

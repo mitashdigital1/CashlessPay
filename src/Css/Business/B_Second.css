@@ -1,44 +1,115 @@
-.b-second{
+.b-second {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-.b-main-second{
+
+.b-main-second {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
     gap: 45px;
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
     background-color: #54725D;
-    padding: 30px 35px;
+    padding: 30px 20px;
     border-radius: 30px;
 }
-.b-main-second-left{
+
+.b-main-second-left {
     width: 50%;
+    /* max-width: 50%; */
+    text-align: center;
 }
-.b-main-second-left img{
+
+.b-main-second-left img {
     width: 100%;
+    max-width: 400px;
 }
-.b-main-second-right{
-    color:#091c18;
+
+.b-main-second-right {
+    color: #091c18;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
+    /* max-width: 50%; */
+    text-align: center;
 }
-.b-main-second-right h2{
-    font-size: 70px;
+
+.b-main-second-right h2 {
+    /* font-size: 2.5rem; */
+    /* letter-spacing: 2px; */
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
-.b-main-second-right p{
+
+.b-main-second-right p {
     font-family: 'Uncut Sans';
-    width: 80%;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 }
-.b-main-second-right button{
-    width: 30%;
+
+.b-main-second-right button {
+    width: 50%;
+    max-width: 200px; 
     background-color: #091c18;
     border-radius: 50px;
-    padding: 13px 1px;
+    padding: 13px 10px;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .b-main-second {
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b-main-second-left, 
+    .b-main-second-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .b-main-second-right h2 {
+        font-size: 2rem;
+    }
+
+    .b-main-second-right p {
+        font-size: 0.9rem;
+    }
+
+    .b-main-second-right button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .b-main-second {
+        padding: 15px;
+    }
+
+    .b-main-second-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .b-main-second-right p {
+        font-size: 0.8rem;
+    }
+
+    .b-main-second-right button {
+        width: 90%;
+    }
 }

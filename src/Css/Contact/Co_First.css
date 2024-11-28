@@ -34,7 +34,7 @@
 }
 
 .co-first-item h1 {
-    font-size: 70px;
+    font-size: 65px;
     letter-spacing: 3px;
     font-weight: 800;
     color: white;
@@ -53,9 +53,10 @@
 }
 
 .co-first-pragraph p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Uncut Sans';
-    font-weight: 500;
+    font-weight: normal;
+    letter-spacing: 0.4px;
     color: white;
     margin: 0;
 }
@@ -70,7 +71,7 @@
 }
 
 .main-form h3 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Uncut Sans';
     font-weight: 300;
     color: white;
@@ -120,12 +121,12 @@ form {
 
 /* Responsive Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .main-heading {
+    .main-heading h1 {
         visibility: visible !important;
     }
 }
 @media (max-width: 768px) {
-    .main-heading{
+    .main-heading h1{
         visibility: visible !important;
     }
     h1{

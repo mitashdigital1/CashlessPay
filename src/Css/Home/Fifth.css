@@ -74,34 +74,38 @@
 /* responsive */
  @media  screen and (min-width:200px) and (max-width:767px){
     .main-fifth{
-        margin-top: 15%;
+        margin-top: 65%;
         padding: 0px 0px;
 
         /* overflow: hidden; */
     }
     .fifth{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         background:none;
-        height: 100vh;
+        gap: 0;
+        padding: 0px 0px;
+        /* height: 120vh; */
     }    
     .left-fifth-sec-item{
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .left-fifth-sec-item img{
-          width: 70%;
-          height: 60vh;
+          width: 18rem;
+          height: 20rem;
+          margin-top: 10%;
     }
     .right-fifth-sec-item{
-        padding-top: 20%;
+        /* padding-top: 20%; */
         display: flex;
         width: 80%;
     }
     .right-fifth-sec-item h1{
         font-size: 40px;
         width: 300px;
+        /* padding-top: 60px; */
     }
     .right-fifth-sec-item p{
         font-size: 17px;
@@ -111,26 +115,29 @@
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-fifth{
+        margin-top: 10%;
         padding: 0px 0px;
         /* overflow: hidden; */
     }
     .fifth{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         background:none;
-        height: 150vh;
+        height: 80vh;
+        gap: 200px;
     }    
     .left-fifth-sec-item{
         display: flex;
         justify-content: center;
     }
     .left-fifth-sec-item img{
-          width: 80%;
-          height: 100vh;
+          width:140%;
+          height: 50vh;
+          margin-top: -40%;
     }
     .right-fifth-sec-item{
         padding-top: 10%;
-        margin-top: 10%;
+        /* margin-top: 10%; */
         display: flex;
         width: 80%;
     }
@@ -140,8 +147,8 @@
     }
     .right-fifth-sec-item p{
         font-size: 17px;
-         width: 90%;
-     margin: 0 auto;
+         width: 100%;
+     /* margin: 0 auto; */
     }
 }
 

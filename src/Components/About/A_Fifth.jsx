@@ -1,20 +1,22 @@
 import React from 'react'
 import '../../Css/About/A_Fifth.css'
-
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 const A_Fifth = () => {
+  const{t,i18n} =useTranslation();
   return (
     <div className='a-fifth'>
     <div className='a-main-fifth'>
         <div className='a-first-fifth-part'>
              <div className='a-first-fifth-handing'>
-             <h2>We Do Things with Passion</h2> 
+             <h2>{t("A-fifth-ln1")}</h2> 
              </div> 
              <div className='a-first-fifth-paragraph'>
-                <h3>We Value Ownership</h3>
-                <p>At CASHLESSPAY, we don’t just follow instructions; we take initiative and lead by example. We believe in owning our outcomes, not just our tasks. Each team member is empowered to take responsibility, hold themselves accountable, and inspire accountability in others.</p>
-                <h3>We Embrace Courage</h3>
-                <p>We encourage bold thinking and open sharing of ideas. Taking risks, seeking feedback, and daring to fail are all part of our journey to learn and grow together.</p>
-                <p>Our culture thrives on passion, ownership, and courage. These values guide us as we create products that our customers truly love.</p>
+                <h3>{t("A-fifth-ln2")}</h3>
+                <p>{t("A-fifth-ln3")}</p>
+                <h3>{t("A-fifth-ln4")}</h3>
+                <p>{t("A-fifth-ln5")}</p>
+                <p>{t("A-fifth-ln6")}</p>
              </div>              
         </div>
         <div className='a-second-fifth-part'>

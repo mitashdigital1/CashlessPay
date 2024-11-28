@@ -59,71 +59,80 @@
 /* responsive */
   @media  screen and (min-width:200px) and (max-width:767px){
     .main-seven{
-        margin-top: 20%;
+        margin-top: 65%;
         padding: 0px 0px;
-        margin-bottom: 20%;
+        /* margin-bottom: 20%; */
     }
     .seven{
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
         background: none;
        gap: 0;
        padding: 0px 0px;
     }    
     .left-seven-sec-item{
         /* width: 300px;   */
+        display: flex;
+        justify-content: center;
      
     }
     .left-seven-sec-item img{
-        width: 350px;
-        border-radius: 30%; 
-         margin-left: 20px;
+        width: 18rem;
+        height: 20rem;
+        margin-top: 0%;
+        /* border-radius: 30%;  */
+         /* margin-left: 20px; */
     } 
     .right-seven-sec-item{
        width: 80%;
+        display: flex;
      
     }
     .right-seven-sec-item h1{
         font-size: 40px;
-        width: 290px;
+        width: 300px;
     }
     .right-seven-sec-item p{
         font-size: 17px;
         width: 90%;
-        margin-left: 20px;
+        margin: 0 auto
         
     }
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-seven{
-        margin-top: 10%;
-        margin-bottom: 15%;
+        margin-top: 0%;
+        padding: 0px 0px;
     }
     .seven{
-        gap: 0;
-        flex-direction: column-reverse;
-        width: 500px;
-        background: none;
+        display: flex;
+        flex-direction: column;
+        background:none;
+        height: 80vh;
+        gap: 20px;
     }    
     .left-seven-sec-item{
-        width:380px;
-        margin-top: 50px;
+        display: flex;
+        justify-content: center;
      
     }
-    .left-seven-sec-item video{
-        width: 100%;
-        border-radius: 30%;
+    .left-seven-sec-item img{
+        width: 140%;
+        height: 50vh;
     } 
     .right-seven-sec-item{
-        margin-top: 80px;
+        padding-top: 10%;
+        /* margin-top: 10%; */
+        display: flex;
+        width: 80%;
     }
     .right-seven-sec-item h1{
-        font-size: 45px;
-        width: 90%;
-        margin-left: 70px;
+        font-size: 40px;
+        width: 100%;
     }
     .right-seven-sec-item p{
         font-size: 17px;
-        width: 70%;
+         width: 100%;
     }
 }
 

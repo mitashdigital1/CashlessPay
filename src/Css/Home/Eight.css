@@ -63,7 +63,7 @@
 @media (max-width: 768px) {
     .main-eight{
         background: none;
-        margin-top: 50%;
+        margin-top: 20%;
     }
     .eight {
         flex-direction: column;

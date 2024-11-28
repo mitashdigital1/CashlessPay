@@ -3,23 +3,21 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    /* margin-top: 50px;
-    gap: 50px;
-    width: 100%;
-    box-sizing: border-box;
     padding: 0 20px;
-} */
+    box-sizing: border-box;
 }
 
 .main-thrad {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
     gap: 45px;
     background-color: #54725D;
-    padding: 30px 35px;
+    padding: 30px 20px;
     border-radius: 30px;
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .haanding {
@@ -27,84 +25,94 @@
     flex-direction: column;
     gap: 20px;
     width: 50%;
+    /* max-width: 50%; */
+    text-align: center;
 }
+
 .main-thrad .haanding h2 {
-    font-size: 70px;
+    /* font-size: 2.5rem; */
     font-weight: 900;
+    font-size: 65px;
+    letter-spacing: 2px;
     color: #091c18;
-    width: 89%;
+    /* width: 100%; */
+    /* max-width: 89%; */
+    /* margin: 0 auto; */
 }
 
 .main-thrad .haanding p {
     font-family: 'Uncut Sans';
-    width: 90%;
-    font-size: 16px;
+    font-size: 20px;
     color: #091c18;
-    font-weight: 600;
-    /* color: black; */
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 }
-.main-thrad .haanding button{
-    width: 30%;
+
+.main-thrad .haanding button {
+    width: 50%;
+    max-width: 200px;
     background-color: #091c18;
     border-radius: 50px;
-    padding: 13px 1px;
+    padding: 13px 10px;
+    margin: 0 auto;
 }
 
 .imagee {
     width: 50%;
+    /* max-width: 50%;  */
+    text-align: center;
 }
 
 .imagee img {
     width: 100%;
+    max-width: 400px; 
 }
 
-@media screen and (max-width: 991px) {
-    .main-thrad {
-        gap: 30px;
-    }
-
-    .haanding h1 {
-        font-size: 50px;
-
-    }
-
-    .haanding p {
-        font-size: 18px;
-
-    }
-
-    .imagee {
-        max-width: 600px;
-
-    }
-}
+/*Responsiveness */
 
 @media screen and (max-width: 768px) {
-    .thrad {
-        margin-top: 50px;
-
-    }
-
     .main-thrad {
-        gap: 20px;
-        flex-direction: column;
-
+        flex-direction: column-reverse;
         text-align: center;
-
+        gap: 20px;
+        padding: 20px;
     }
 
-    .haanding h1 {
-        font-size: 45px;
-
+    .haanding h2 {
+        font-size: 1.8rem;
     }
 
     .haanding p {
-        font-size: 16px;
-
+        font-size: 0.9rem;
     }
 
-    .imagee {
+    .imagee img {
         max-width: 100%;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .main-thrad {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .haanding h2 {
+        font-size: 1.5rem;
+    }
+
+    .haanding p {
+        font-size: 0.8rem;
+    }
+
+    .main-thrad .haanding button {
+        width: 70%; 
+    }
+
+    .imagee img {
+        max-width: 100%;
     }
 }

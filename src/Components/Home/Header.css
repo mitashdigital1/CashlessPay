@@ -16,9 +16,9 @@
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-  gap: 200px;
+  justify-content: space-evenly;
+  padding: 15px 60px;
+  gap: 100px;
   background-color: #0a2822;
   max-width: 1300px;
   margin: 0 auto; 
@@ -34,20 +34,21 @@
 }
 
 .nav-left-logo {
-  width: 140px;
-
+  width: 100%;
 }
 
 .nav-left-logo img {
-  width: 100%;
+  width: 130px;
   filter: invert(10);
 }
 
 .nav-center-item .dropdown {
   display: flex;
+  position:fixed;
+  left: 28%;
+  top: 4.5%;
   align-items: center;
   gap: 30px;
-  margin-left: 30px;
 }
 
 .nav-center-item .dropdown li a {
@@ -61,7 +62,7 @@
 
 .nav-center-item ul li a:hover {
   border-bottom: 2px solid #73C848;
-  transition: ease-in 1s;
+  transition: ease-in 0.2s;
 }
 
 /* dropdown */
@@ -74,18 +75,14 @@ li {
   justify-content: center;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .nav-right-item {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-right: 20px;
 }
 
-.nav-right-item .first-item form {
+/* .nav-right-item .first-item form {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -125,22 +122,23 @@ li {
 
 .figth-first-item a:hover {
   border-bottom: 1px solid #ffff;
-}
+} */
 
 .btn button {
   background-color: #035B67;
   border-radius: 10px;
   color: white;
-  width: 100px;
+  width: 150%;
   /* height: 20px; */
   border: none;
   outline: none;
-  font-size: 10px;
-  padding: 0px 10px;
+  font-size: 60%;
+  padding: 2px 10px;
   cursor: pointer;
   transform: scale(1, 1.8);
   font-weight: 900;
    margin-top: -10%;
+   margin-left: -20%;
 }
 
 .menu {
@@ -153,7 +151,7 @@ li {
 
 /* mobile */
 .mobile-item {
-  width: 200px;
+  width: 170px;
   background-color: #035B67;
   display: flex;
   align-items: center;
@@ -161,8 +159,8 @@ li {
   transition: ease-in-out 5ms;
   transform-origin: top;
   position: absolute;
-
-  top: 90px;
+  right: 10%;
+  top: 80px;
   z-index: 1;
 }
 
@@ -292,17 +290,14 @@ li {
 @media screen and (min-width:200px) and (max-width:767px) {
   .navbar {
     gap: 1px;
-    padding: 0px 0px;
-
-
-
+    padding: 0px 40px;
   }
 
  
 
   .nav-center-item .dropdown {
     display: none;
-    gap: 70px;
+    gap: 7px;
   }
 
 
@@ -310,20 +305,21 @@ li {
     display: block;
     cursor: pointer;
     color: white;
+    margin-left: 10px;
   }
 
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
   .navbar {
-    gap: 200px;
-    padding: 10px 30px;
+    gap: 20px;
+    padding: 10px 50px;
 
   }
 
   .nav-center-item .dropdown {
     display: none;
-    gap: 70px;
+    gap: 10px;
   }
 
 
@@ -337,23 +333,39 @@ li {
 
 @media screen and (min-width:991px) and (max-width:1024px) {
   .navbar {
-    gap: 60px;
-    padding: 0px 0px;
+    gap: 40px;
+    padding: 0px 60px;
   }
 
   .nav-center-item {
     left: 50px;
+  }
+  .nav-center-item .dropdown {
+    display: flex;
+    position:fixed;
+    left: 28%;
+    top: 2.5%;
+    align-items: center;
+    gap: 30px;
   }
 }
 
-@media screen and (min-width:1025px) and (max-width:1260px) {
+@media screen and (min-width:1025px) and (max-width:1224px)  {
   .navbar {
-    gap: 75px;
-    padding: 0px 0px;
+    gap: 65px;
+    padding: 0px 80px;
   }
 
   .nav-center-item {
     left: 50px;
+  }
+  .nav-center-item .dropdown {
+    display: flex;
+    position:fixed;
+    left: 28%;
+    top: 2.4%;
+    align-items: center;
+    gap: 30px;
   }
 }
 
@@ -447,3 +459,28 @@ li {
   margin-right: 10px; /* Space between flag and text */
 }
 
+
+/* Custom scrollbar for dropdown */
+.custom-scrollbar {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #54725D #0a2822; /* Thumb color and track color */
+}
+
+/* For WebKit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0a2822; /* Track background color */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #54725D; /* Thumb color */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3e5544; /* Thumb color on hover */
+}

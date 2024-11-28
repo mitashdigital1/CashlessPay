@@ -4,8 +4,11 @@ import "aos/dist/aos.css";
 import '../../Css/Home/Fifth.css'
 import Circle from '..//..//assets/d/circle.png'
 import Mob from '..//..//assets/d/4-(1).png'
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Fifth_Section = () => {
+  const{t,i18n} =useTranslation();
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -20,8 +23,8 @@ const Fifth_Section = () => {
        <div className='fifth'>
 
        <div className="right-fifth-sec-item" >
-            <h1>Experience Low-Cost Transfers in Any Global Currency</h1>
-            <p>Send US dollars to SEA and ANZ regions, or any currency around the world with ease. Pay friends, family, or new connections on the go using your preferred global currency. With a stable digital US dollar backing each transaction, CASHLESSPAY minimizes currency fluctuations, providing reliable, affordable transfers wherever you are.</p>
+            <h1>{t("fifth-line1")}</h1>
+            <p>{t("fifth-line2")}</p>
          </div>
 
          <div className="left-fifth-sec-item">

@@ -1,17 +1,20 @@
 import React from 'react'
 import '../../Css/About/A_First.css'
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 import { useNavigate } from 'react-router-dom'
 const A_First = () => {
+  const{t,i18n} =useTranslation();
   const navigate = useNavigate();
   return (
     <div className='a-first'>
       <div className='a-main-first'>
         <div className='a-first-item'>
-          <h1>About US</h1>
-          <p><span id='cashlesspay'>At CASHLESSPAY</span>we believe everyone should have complete control over their finances. Our platform is designed with flexibility and customer empowerment at its core, giving you the freedom to manage your money on your terms. Whether you’re sending funds internationally or handling business transactions, CASHLESSPAY is here to make financial control accessible, easy, and reliable for everyone.</p>
+          <h1>{t("A-f-ln1")}</h1>
+          <p><span id='cashlesspay'>{t("A-f-ln2")}</span>{t("A-f-ln3")}</p>
           <div className='input-box'>
-            <input type="email" placeholder='Your work email' />
-            <button onClick={()=>navigate("/contactus@cashlesspay.co")} >Contact Us</button>
+            <input type="email" placeholder={t("A-f-ln5")}/>
+            <button onClick={()=>navigate("/contactus@cashlesspay.co")} >{t("A-f-ln4")}</button>
           </div>
         </div>
         {/* <div className='a-image'>

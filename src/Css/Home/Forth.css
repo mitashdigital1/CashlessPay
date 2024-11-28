@@ -54,6 +54,7 @@
     letter-spacing: 2px;
     /* width: 575px; */
     color: white;
+
      
     
 }
@@ -65,7 +66,7 @@
    font-family: 'Uncut Sans';
     font-weight: normal;
     letter-spacing: 0.4px;
-    margin-left: -80px;
+    margin-left: 10px;
     color: white;
  
   
@@ -74,28 +75,31 @@
 /* responsive */
  @media  screen and (min-width:200px) and (max-width:767px){
     .main-forth{
-        margin-top: 10%;
+        margin-top: -35%;
         padding: 0px 0px;
 
         /* overflow: hidden; */
     }
     .forth{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         background:none;
-        height: 100vh;
+        gap: 0;
+        padding: 0px 0px;
+        /* height: 110vh; */
     }    
     .left-four-sec-item{
         display: flex;
         justify-content: center;
     }
     .left-four-sec-item img{
-          width: 70%;
-          height: 50vh;
+          width: 18rem;
+          height: 20rem;
+          margin-top: 10%;
     }
     .right-four-sec-item{
-        padding-top: 10%;
-        margin-top: 20%;
+        /* padding-top: 30%; */
+        /* margin-top: 20%; */
         display: flex;
         width: 80%;
     }
@@ -111,28 +115,30 @@
 }
 @media  screen and (min-width:768px) and (max-width:991px) {
     .main-forth{
-        margin-top: 10%;
+        margin-top: 0%;
         padding: 0px 0px;
 
         /* overflow: hidden; */
     }
     .forth{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         background:none;
-        height: 150vh;
+        height: 80vh;
+        gap: 200px;
     }    
     .left-four-sec-item{
         display: flex;
         justify-content: center;
     }
     .left-four-sec-item img{
-          width: 70%;
-          height: 100vh;
+          width: 140%;
+          height: 50vh;
+          margin-top: -20%;
     }
     .right-four-sec-item{
         padding-top: 10%;
-        margin-top: 10%;
+        /* margin-top: 10%; */
         display: flex;
         width: 80%;
     }
@@ -143,7 +149,7 @@
     .right-four-sec-item p{
         font-size: 17px;
          width: 90%;
-     margin: 0 auto;
+     /* margin: 0 auto; */
     }
 }
 

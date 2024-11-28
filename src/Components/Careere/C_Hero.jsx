@@ -1,21 +1,23 @@
 import React from 'react'
 import '../../Css/Careere/C_Hero.css'
-
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18n'
 const C_Hero = () => {
+  const{t,i18n} =useTranslation();
   return (
     <>
         <div className='c-hero'>
             <div className='c-hero-main'>
             <div className='c-hero-handing'>
-            <h1>CASHLESSPAY Careers</h1>
+            <h1>{t("C-h-ln1")}</h1>
             </div>
             <div className='c-hero-paragraph'>
-                <p>Join a team of forward-thinking, ambitious individuals who are passionate about creating a lasting impact in global finance.</p>
+                <p>{t("C-h-ln2")}</p>
             </div>
             </div>
         </div>
         <div className='c-hero-down'>
-          <h3>Open positions at Cashlesspay: </h3>
+          <h3>{t("C-h-ln3")}</h3>
         </div>
         <hr />
     </>
