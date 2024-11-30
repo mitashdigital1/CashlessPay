@@ -1,50 +1,52 @@
+.contanier {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
 .Eight {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
   }
   
   .main-Eight {
+    width: 1300px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 45px;
-    width: 85%; 
-    max-width: 1200px;
+    gap: 20px;
+    
   }
   
   .eight-first {
-    margin-top: 6%;
     width: 100%;
     text-align: center;
   }
   
   .eight-first h1 {
     color: white;
-    font-size: 90px;
-    letter-spacing: 3px;
-    line-height: 1.2;
+    font-size: 80px;
+    letter-spacing: 2px;
+    /* line-height: 1.2; */
   }
   
   .cardgroup {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 53px;
     width: 100%;
-    flex-wrap: wrap;
-    margin-top: 30px;
   }
   
 
   .card {
     background-color: #54725d;
-    width: 240px;
-    height: 180px;
+    width: 22%;
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
     transition: transform 0.3s ease;
   }
@@ -58,7 +60,7 @@
     height: 35px;
     background-color: rgb(161, 218, 18);
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   
   .card .img img {
@@ -69,7 +71,7 @@
   
   .card p {
     color: white;
-    width: 70%;
+    width: 80%;
     font-size: 20px;
     font-family: 'Uncut Sans';
     /* margin: 0 auto; */
@@ -77,20 +79,16 @@
   
   /* Responsivee */
  
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     .eight-first h1 {
       font-size: 60px;
     }
   
     .cardgroup {
-      gap: 15px;
-      justify-content: center;
+      gap: 38px;
     }
   
-    .card {
-      width: 45%; /* 2 per row */
-      height: 160px;
-    }
+    
   
     .card p {
       font-size: 14px;
@@ -99,38 +97,32 @@
   
 
   @media (max-width: 768px) {
-    .main-Eight {
-      width: 90%;
-      gap: 30px;
-    }
+   
   
     .eight-first h1 {
-      font-size: 50px;
+      font-size: 45px;
     }
   
     .cardgroup {
-      gap: 20px;
-      justify-content: space-around;
+      width: 100%;
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
     }
   
     .card {
-      width: 45%; 
-      height: 150px;
-    }
-  
-    .card p {
-      font-size: 12px;
+      width: 40%;
     }
   }
   
 
   @media (max-width: 480px) {
     .eight-first {
-      width: 100%;
+      padding: 0px 20px;
     }
   
     .eight-first h1 {
-      font-size: 40px;
+      font-size: 35px;
     }
   
     .cardgroup {
@@ -138,25 +130,25 @@
       justify-content: center;
     }
   
-    .card {
-      width: 100%;
-      height: 120px;
-      text-align: center;
-    }
   
     .card p {
       font-size: 12px;
     }
-  
-    .card .img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .card .img img {
-      width: 15px;
-      height: 15px;
-      margin: 50% 0 0 50%;
-    }
+
   }
+  @media (max-width: 320px) {
+    .eight-first {
+      padding: 0px 30px;
+    }
   
+    .eight-first h1 {
+      font-size: 28px;
+    }
+    .card p {
+      font-size: 10px;
+    }
+    .card{
+      width: 90%;
+    }
+
+  }

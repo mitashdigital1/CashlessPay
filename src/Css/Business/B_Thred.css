@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding: 0 20px;
-    box-sizing: border-box;
+    margin: 40px auto;
+    padding: 0 15px;
+    /* box-sizing: border-box; */
 }
 
 .main-thrad {
@@ -17,7 +17,7 @@
     padding: 30px 20px;
     border-radius: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .haanding {

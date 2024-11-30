@@ -1,24 +1,36 @@
 /* Main container */
+.contanier {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
 .main-eight {
     display: flex;
+    /* align-items: center; */
     justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    /* background-color: #54725D; */
-    margin-top: 30px;
-    border-radius: 40px;
+    margin-top: 40px;
+    /* width: 100%; */
+    /* padding: 20px 50px; */
+    /* margin-top: 1px; */
 }
 
 /* Inner container */
 .eight {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
-    height: auto;
-    gap: 80px;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 0px 0px;
+    background-color: #54725D;
+    /* z-index: -1; */
+    border-radius: 40px;
 }
-.eight :hover{
+
+.eight :hover {
     background-color: #54725D;
     border-radius: 20px;
 }
@@ -37,15 +49,15 @@
     font-weight: 900;
     text-transform: uppercase;
     color: white;
-    font-size: 40px;
+    font-size: 80px;
     letter-spacing: 2px;
 
 }
 
 .eight p {
-    line-height: 1.5;
-    color: #333;
-    margin: 0;
+    /* line-height: 1.5; */
+    /* color: #333; */
+    /* margin: 0; */
     color: white;
     font-size: 20px;
     font-weight: normal;
@@ -54,23 +66,48 @@
 }
 
 /* Responsive */
-@media  screen and (min-width:768px) and (max-width:991px){
-    .main-eight{
+@media screen and (min-width:768px) and (max-width:991px) {
+    .eight {
         background: none;
     }
-    
+
 }
-@media (max-width: 768px) {
-    .main-eight{
+@media screen and (max-width: 992px){
+    .main-eight {
         background: none;
-        margin-top: 20%;
     }
+
     .eight {
         flex-direction: column;
         align-items: center;
-    }
+        background: none;
 
-    /* .eight div {
-        margin-bottom: 20px;
-    } */
+    }
+    .eight h5 {
+    margin-bottom: 10px;
+    font-size: 40px;
+
+}
+
+.eight p {
+   
+    font-size: 20px;
+    /* margin: 0 auto; */
+}
+
+}
+
+@media (max-width: 768px) {
+    .eight h5 {
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+
+.eight p {
+   
+    font-size: 14px;
+    margin: 0 auto;
+}
+
 }

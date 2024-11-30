@@ -8,6 +8,7 @@ const Seven_Section = () => {
   const{t,i18n} =useTranslation();
   return (
     <>
+    <div className="contanier">
       <div className='main-seven'>
         <div className='seven'>
 
@@ -19,10 +20,13 @@ const Seven_Section = () => {
           </div>
 
           <div className="left-seven-sec-item">
-            <img src='https://www.parasramindia.com/wp-content/uploads/2023/03/broker-in-india.png' alt="" />
+          <div className="seven-imgee">
+            <img src='https://www.parasramindia.com/wp-content/uploads/2023/03/broker-in-india.png' style={{position:"relative"}} alt="" />
+            </div>
           </div>
 
         </div>
+      </div>
       </div>
     </>
   )

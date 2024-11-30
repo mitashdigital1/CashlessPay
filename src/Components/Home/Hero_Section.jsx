@@ -36,11 +36,12 @@ const Hero_Section = ({setShowlogin}) => {
   }, []);
     return (
         <>
+        <div className="contanier">
             <div className='main'>
                 <div className='hero-sec'>
                     <div className="hero-left-item">
                         <div className='main-heading'>
-                            <h1 className='h11'>{t("line1")}  </h1>
+                            <h1 >{t("line1")}  </h1>
                             <h1>{t("line2")}</h1>
                             <h1>{t("line3")}</h1>
                             <h1>{t("line4")}</h1>
@@ -64,18 +65,19 @@ const Hero_Section = ({setShowlogin}) => {
                     </div>
 
                     <div className="hero-right-item">
-                        {/* <video  autoPlay muted loop src={Video}>
-                        </video> */}
-                        
-                        {/* <img src="https://spicemoney.com/_next/image?url=%2Fimages%2Fabout3.png&w=1920&q=75" alt="" /> */}
+                    <div className="hero-imgee">
+    
                         <img src={Orange} alt="" />
                         <img src={Yellow} alt="" />
-                        <img src={Phone} alt="" data-aos="zoom-out-down" />
+                        <img src={Phone} style={{position:"relative"}} alt="" data-aos="zoom-out-down" />
+                        
 
                         
                     </div>
+                    </div>
                 </div>
             </div>
+             </div>
         </>
     )
 }

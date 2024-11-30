@@ -8,6 +8,7 @@ const Eight_Section = () => {
     const{t,i18n} =useTranslation();
     return (
         <>
+        <div className="contanier">
             <div className='main-eight'>
                 <div className='eight'>
                     <div className="eight-one">
@@ -23,6 +24,7 @@ const Eight_Section = () => {
                         <p>{t("eight-ln6")}</p>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

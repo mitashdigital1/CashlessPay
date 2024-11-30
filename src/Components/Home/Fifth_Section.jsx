@@ -18,7 +18,7 @@ const Fifth_Section = () => {
     });
   }, []);
   return (
-    <>
+    <><div className="contanier">
         <div className='main-fifth'>
        <div className='fifth'>
 
@@ -28,12 +28,15 @@ const Fifth_Section = () => {
          </div>
 
          <div className="left-fifth-sec-item">
+         <div className="fifth-imgee">
             {/* <img src='https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/payments/IMPS.png' alt="" /> */}
-            <img src={Circle} alt="" />
+            <img src={Circle} style={{position:"relative"}} alt="" />
             <img src={Mob} alt="" data-aos="flip-right" />
+         </div>
          </div>
         
         </div>
+       </div>
        </div>
     </>
   )

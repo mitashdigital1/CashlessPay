@@ -86,6 +86,7 @@ const Header = ({setShowlogin}) => {
   };
   return (
     <>
+    
       <div className='nav'>
         <div className='navbar'>
           <div className="nav-left-logo">
@@ -179,7 +180,7 @@ const styles = {
     border:"1px solid #0a2822",
     borderRadius: "5px",
     backgroundColor: "#54725D",
-    zIndex: 1000,
+    zIndex: "2000",
     maxHeight: "150px",
     width:"150px",
     overflowY: "scroll",

@@ -20,19 +20,23 @@ const Sixth_Section = () => {
   return (
     
     <>
+    <div className="contanier">
         <div className='main-sixth'>
        <div className='sixth'>
          <div className="left-sixth-sec-item">
+         <div className="sixth-imgee">
             {/* <video   autoPlay muted loop playsInline src={videoSixth}></video> */}
             {/* <img src="https://i0.wp.com/goniyo.com/wp-content/uploads/2024/03/niyoequitas_card.webp?fit=792%2C1024&ssl=1" alt="" /> */}
-            <img src={Mobile} alt="" />
+            <img src={Mobile} style={{position:"relative"}} alt="" />
             <img src={Card} alt="" data-aos="fade-right"/>
+         </div>
          </div>
          <div className="right-sixth-sec-item">
             <h1>{t("sixth-line1")}</h1>
             <p>{t("sixth-line2")}</p>
          </div>
         </div>
+       </div>
        </div>
     </>
   )
