@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    /* padding: 0 15px; */
+    width: 100%;
 }
 
 .a-main-sixth {
@@ -11,133 +11,133 @@
     align-items: center;
     justify-content: center;
     padding: 50px 40px;
+    background-color: #47663B;
+
     border-radius: 30px;
     gap: 40px;
     width: 95%;
-    max-width: 1200px;
-    /* background-color: #47663B; */
-    flex-wrap: wrap;
+    max-width: 1300px;
+    flex-wrap: wrap; 
 }
 
 .a-first-sixth-part {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex: 1;
     max-width: 600px;
 }
-
-.a-first-sxith-handing h2 {
+.a-first-sixth-part h2 {
     font-size: 65px;
     font-weight: 900;
-    color: white;
     letter-spacing: 2px;
-    /* text-align: left; */
-}
-
-.a-first-sixth-paragraph {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.a-first-sixth-paragraph h3 {
-    font-size: 30px;
-    font-family: 'Uncut Sans';
-    font-weight: 300;
     color: white;
 }
 
-.a-first-sixth-paragraph p {
+.a-first-sixth-part h3 {
+    font-size: 35px;
+    font-family: 'Uncut Sans';
+    font-weight: 600;
+    color: white;
+}
+
+.a-first-sixth-part p {
     font-size: 20px;
     font-family: 'Uncut Sans';
     font-weight: normal;
-    color: white;
+    margin: 15px 0;
     letter-spacing: 0.4px;
+    color: white;
     max-width: 500px; 
-    /* text-align: left;  */
 }
 
 .a-second-sixth-part {
     flex: 1; 
-    max-width: 640px; 
+    width: 50%;
 }
 
 .a-second-sixth-part img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    object-fit: cover; 
-    max-height: 80vh; 
+    width: 100%; 
+    /* height: 600px; */
+    border-radius: 30px; 
+    object-fit: cover;
+    /* height: 600px; */
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1034px) {
+
+@media (min-width: 320px) and (max-width: 768px) {
     .a-main-sixth {
-        gap: 30px; 
+        flex-direction: column;
+        padding: 30px 20px; 
+    }
+    .a-first-sixth-part {
+        width: 100%;
+    }
+    .a-second-sixth-part {
+        width: 100%;
+    }
+    .a-first-sixth-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 100;
+        color: white;
+    }
+    .a-second-sixth-part img {
+        /* height: 280px;  */
+    }
+
+    .a-first-sixth-part p {
+        /* text-align: justify; */
+        width: 100%;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 839px) {
     .a-main-sixth {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 20px;
     }
-
+    .a-first-sixth-part {
+        width: 100%;
+    }
     .a-second-sixth-part {
-        max-width: 100%; 
+        width: 100%;
+    }
+    .a-second-sixth-part img {
+        /* height: 400px;  */
     }
 
-    .a-first-sxith-handing h2 {
-        font-size: 50px;
-        text-align: center;
+    .a-first-sixth-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 300;
+        color: white;
     }
 
-    .a-first-sixth-paragraph h3 {
-        font-size: 24px; 
-    }
-
-    .a-first-sixth-paragraph p {
+    .a-first-sixth-part p {
+        /* text-align: justify; */
+        width: 100%;
         font-size: 16px;
-        text-align: justify; 
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 840px) and (max-width: 1040px) {
     .a-main-sixth {
-        padding: 30px 20px; 
+        width: 95%;
     }
-
+    .a-first-sixth-part {
+        width: 50%;
+    }
+    .a-second-sixth-part {
+        width: 50%;
+    }
+    .a-first-sixth-part p {
+        width: 100%;
+    }
     .a-second-sixth-part img {
-        max-height: 60vh;
-    }
-
-    .a-first-sxith-handing h2 {
-        font-size: 40px; 
-        text-align: left;
-    }
-
-    .a-first-sixth-paragraph p {
-        font-size: 15px; 
-        text-align: justify; 
-    }
-}
-
-@media (max-width: 480px) {
-    .a-main-sixth {
-        gap: 10px; 
-    }
-
-    .a-second-sixth-part img {
-        max-height: 50vh; 
-    }
-
-    .a-first-sxith-handing h2 {
-        font-size: 35px; 
-    }
-
-    .a-first-sixth-paragraph p {
-        font-size: 14px; 
+        /* height: 600px; */
     }
 }

@@ -3,148 +3,137 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    /* padding: 0 15px; */
+    width: 100%;
 }
 
 .a-main-seven {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.a-seven-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: #47663B;
     padding: 50px 40px;
     border-radius: 30px;
-    width: 100%;
     gap: 40px;
+    width: 95%;
+    max-width: 1300px;
     flex-wrap: wrap; 
 }
 
-.a-seven-main-handing {
+.a-first-seven-part {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    flex: 1; 
+    justify-content: center;
+    gap: 30px;
+    flex: 1;
+    max-width: 600px;
 }
-
-.a-seven-main-handing h2 {
+.a-first-seven-part h2{
     font-size: 65px;
     font-weight: 900;
     letter-spacing: 2px;
     color: white;
-    /* text-align: left;  */
 }
 
-.a-seven-main-peragraph {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.a-first-seven-part h3 {
+    font-size: 35px;
+    font-family: 'Uncut Sans';
+    font-weight: 600;
+    color: white
+}
+
+.a-first-seven-part p {
     font-size: 20px;
     font-family: 'Uncut Sans';
+    font-weight: normal;
+    margin: 15px 0;
     letter-spacing: 0.4px;
+    color: white;
     max-width: 500px; 
-    color: white;
-    text-align: left; 
 }
 
-.a-seven-main-peragraph h3 {
-    font-size: 30px;
-    font-family: 'Uncut Sans';
-    font-weight: 300;
-    color: white;
-    /* line-height: 1.5; */
-}
-
-.a-seven-image {
+.a-second-seven-part {
     flex: 1; 
-    max-width: 640px; 
+    width: 50%;
 }
 
-.a-seven-image img {
+.a-second-seven-part img{
     width: 100%;
-    height: auto;
-    border-radius: 30px;
-    object-fit: cover; 
-    max-height: 80vh; 
+    border-radius: 30px; 
+    object-fit: cover;
+    /* height:500px; */
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1034px) {
+
+@media (min-width: 320px) and (max-width: 768px) {
     .a-main-seven {
-        gap: 30px; 
+        padding: 30px 20px; 
+    }
+    .a-first-seven-part {
+        width: 100%;
+    }
+    .a-second-seven-part {
+        width: 100%;
+    }
+    .a-first-seven-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 100;
+        color: white
+    }
+    .a-second-seven-part img {
+        /* height: 280px;  */
     }
 
-    .a-seven-main-handing h2 {
-        font-size: 50px; 
+    .a-first-seven-part p {
+        /* text-align: justify; */
+        width: 100%;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 839px) {
-    .a-seven-left {
+    .a-main-seven {
         flex-direction: column-reverse; 
-        padding: 30px;
         gap: 20px;
     }
-
-    .a-seven-main-handing h2 {
-        font-size: 45px;
-        text-align: left; 
+    .a-first-seven-part {
+        width: 100%;
+    }
+    .a-second-seven-part {
+        width: 100%;
+    }
+    .a-second-seven-part img {
+        /* height: 400px;  */
     }
 
-    .a-seven-main-peragraph {
-        max-width: 100%;
-        text-align: justify
-        ; 
+    .a-first-seven-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 300;
+        color: white
     }
 
-    .a-seven-image {
-        max-width: 100%; 
-    }
-}
-
-@media (max-width: 768px) {
-    .a-seven-left {
-        padding: 20px;
-    }
-
-    .a-seven-main-handing h2 {
-        font-size: 40px;
-    }
-
-    .a-seven-main-peragraph h3 {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .a-seven-main-peragraph {
+    .a-first-seven-part p {
+        /* text-align: justify; */
+        width: 100%;
         font-size: 16px;
-        line-height: 1.4;
-    }
-
-    .a-seven-image img {
-        max-height: 60vh; 
     }
 }
 
-@media (max-width: 480px) {
-    .a-seven-main-handing h2 {
-        font-size: 35px; 
+@media (min-width: 840px) and (max-width: 1040px) {
+    .a-main-seven {
+        width: 95%;
     }
-
-    .a-seven-main-peragraph {
-        font-size: 14px;
+    .a-first-seven-part {
+        width: 50%;
     }
-
-    .a-seven-image img {
-        max-height: 50vh;
+    .a-second-seven-part {
+        width: 50%;
+    }
+    .a-first-seven-part p {
+        width: 100%;
+    }
+    .a-second-seven-part img {
+        /* height: 550px; */
     }
 }

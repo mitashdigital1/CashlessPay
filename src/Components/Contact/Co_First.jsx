@@ -13,7 +13,7 @@ const Co_First = () => {
     };
 
     return (
-        <div >
+        <div className=' con-main' >
             <div className="main-heading">
                 <h1>{t("CO-ln1")}</h1>
 

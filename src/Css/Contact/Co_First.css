@@ -1,3 +1,6 @@
+.con-main{
+    width: 100%;
+}
 .main-heading{
     margin-top: 90px;
     margin-bottom: -100px;
@@ -16,9 +19,9 @@
     justify-content: space-between;
     margin-top: 130px;
     gap: 50px;
-    padding: 0 50px;
+    padding: 0 0px;
     box-sizing: border-box;
-    max-width: 1250px;
+    width:95%;
     margin-left: auto; 
     margin-right: auto;
 }
@@ -29,14 +32,14 @@
     gap: 20px;
     padding: 20px;
     border-radius: 30px;
-    width: 45%;
+    width: 50%;
     box-sizing: border-box;
 }
 
 .co-first-item h1 {
     font-size: 65px;
     letter-spacing: 3px;
-    font-weight: 800;
+    font-weight: 600;
     color: white;
     line-height: 50px;
     margin: 0;
@@ -54,6 +57,7 @@
 
 .co-first-pragraph p {
     font-size: 20px;
+    width: 100%;
     font-family: 'Uncut Sans';
     font-weight: normal;
     letter-spacing: 0.4px;
@@ -65,7 +69,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 45%;
+    width: 50%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -95,13 +99,12 @@ form {
 .from-drop-down select,
 .text-from textarea {
     width: 100%;
-    max-width: 540px;
+    
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
 }
-
 .text-from textarea {
     height: 120px;
 }
@@ -125,9 +128,19 @@ form {
         visibility: visible !important;
     }
 }
+@media (min-width: 320px) and (max-width: 768px){
+    .co-first-item h1{
+        font-size: 40px;
+        /* margin: 15px 0; */
+    }
+    .co-first-pragraph{
+        gap: 25px;
+    }
+}
 @media (max-width: 768px) {
     .main-heading h1{
         visibility: visible !important;
+        font-size: 60px;
     }
     h1{
         width: 100%;
@@ -136,7 +149,7 @@ form {
         flex-direction: column;
         align-items: center;
         padding: 0 20px;
-        gap: 30px;
+        gap: 45px;
     }
 
     .co-main-first,

@@ -24,7 +24,7 @@ const Home = () => {
     <div className="div" style={{width:"1300px", maxWidth:"100%", margin:"0 auto"}}>
     {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
     <div>
-     {/* <Header setShowlogin={setShowlogin}/> */}
+     <Header setShowlogin={setShowlogin}/>
      <HeroSec setShowlogin={setShowlogin}/>
 
      {/* <SecondSec/> */}

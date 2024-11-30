@@ -4,7 +4,7 @@
     justify-content: center;
     margin: 40px auto;
     padding: 0 15px;
-    /* box-sizing: border-box; */
+   
 }
 
 .main-thrad {
@@ -68,7 +68,6 @@
 
 .imagee img {
     width: 100%;
-    max-width: 400px; 
 }
 
 /*Responsiveness */
@@ -82,7 +81,7 @@
     }
 
     .haanding h2 {
-        font-size: 1.8rem;
+        font-size: 40px !important;
     }
 
     .haanding p {
@@ -101,11 +100,11 @@
     }
 
     .haanding h2 {
-        font-size: 1.5rem;
+        font-size: 30px !important;
     }
 
     .haanding p {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 
     .main-thrad .haanding button {

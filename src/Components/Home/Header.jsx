@@ -16,6 +16,7 @@ import thailandflag from "..//../assets/flags/thailandflag.png"
 import vietnamflag from "..//../assets/flags/vietnam.png"
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n'
+import { BiFontSize } from 'react-icons/bi'
 
 const Header = ({setShowlogin}) => {
   const [mobileItem, setMobileItem] = useState(false)
@@ -108,7 +109,7 @@ const Header = ({setShowlogin}) => {
            
 
           <div className="nav-right-item">
-          <div style={styles.container}>
+          <div className="btn_1" style={styles.container}>
              <div
         style={styles.dropdownHeader}
         onClick={toggleDropdown}
@@ -146,7 +147,8 @@ const Header = ({setShowlogin}) => {
             <div className='btn'>
               <button onClick={()=>setShowlogin(true)} >{t("button_text")}</button>
             </div>
-            <IoMenu onClick={Clicked} className='menu' />
+            <div className='btn_3' > <IoMenu onClick={Clicked} className='menu' /></div>
+           
           </div>
         </div>
       </div>
@@ -157,7 +159,7 @@ const Header = ({setShowlogin}) => {
 
 const styles = {
   container: {
-    width: "120px",
+    width: "100px",
     position: "relative",
     display:"flex",
     justifyContent: "start",
@@ -193,8 +195,8 @@ const styles = {
   },
   image: {
     marginRight: "5px",
-    width: "23px",
-    height: "23px",
+    width: "20px",
+    height: "20px",
     objectFit: "cover",
     borderRadius:"50%"
   },

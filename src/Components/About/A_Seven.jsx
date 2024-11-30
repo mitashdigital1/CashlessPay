@@ -7,10 +7,11 @@ const A_Seven = () => {
     return (
         <div className='a-seven'>
             <div className='a-main-seven'>
-                <div className='a-seven-left'>
-                    <div className='a-seven-main-handing'>
+                <div className='a-first-seven-part'>
+                    <div className='a-first-seven-handing'>
                         <h2>{t("A-seven-ln1")}</h2>
-                        <div className='a-seven-main-peragraph'>
+                        </div>
+                        <div className='a-first-seven-paragraph'>
                             <h3>{t("A-seven-ln2")}</h3>
                             <p>{t("A-seven-ln3")}</p>
                             <h3>{t("A-seven-ln4")}</h3>
@@ -18,12 +19,11 @@ const A_Seven = () => {
                             <p>{t("A-seven-ln6")} </p>
                         </div>
                     </div>
-                    <div className='a-seven-image'>
+                    <div className='a-second-seven-part'>
                         <img src="https://st.depositphotos.com/2325841/2535/i/450/depositphotos_25350645-stock-photo-happy-couple.jpg" alt="" />
                     </div>
-                </div>
+                </div>    
             </div>
-        </div>
     )
 }
 

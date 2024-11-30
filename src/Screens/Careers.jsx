@@ -16,6 +16,7 @@ const Careers = () => {
 
   return (
     <>
+    <div className="div" style={{width:"1300px", maxWidth:"100%", margin:"0 auto"}}>
         {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
 
          <div>
@@ -46,6 +47,7 @@ const Careers = () => {
         <Footer/>
   
       
+      </div>
       </div>
     </>
   )
