@@ -97,6 +97,9 @@ li {
  width: 10%;
  margin-top: 35px;
 }
+.btn_1 span {
+	font-size: 17px;
+}
 
 .nav-right-item .btn_1{
   width: 60%;
@@ -304,7 +307,7 @@ li {
     padding: 0px 2px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     /* justify-content: space-evenly; */
    width: 100%;
   }
@@ -336,13 +339,13 @@ li {
   
   .nav-right-item{
     width: 70% !important;
-    gap: 1px;
+    gap: 0px;
   }
   .nav-right-item .btn_1{
-    width: 30%;
+    width: 20%;
   }
   .nav-right-item .btn{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +429,7 @@ li {
 
 }
 .btn_1 span {
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .dropdown-content a {

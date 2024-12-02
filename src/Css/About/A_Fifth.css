@@ -72,6 +72,9 @@
     .a-first-fifth-part {
         width: 100%;
     }
+    .a-first-fifth-part h2{
+        font-size: 35px;
+    }
     .a-second-fifth-part {
         width: 100%;
     }

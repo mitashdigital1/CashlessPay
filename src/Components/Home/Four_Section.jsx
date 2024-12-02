@@ -17,6 +17,7 @@ const Four_Section = () => {
       duration: 2000, // Duration of animation
       easing: 'ease-in-out', // Easing function for animation
       once: false, // Animation happens only once
+      mirror: false,
     });
   }, []);
   return (

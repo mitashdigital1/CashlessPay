@@ -71,6 +71,9 @@
     .a-first-seven-part {
         width: 100%;
     }
+    .a-first-seven-part h2{
+        font-size: 35px;
+    }
     .a-second-seven-part {
         width: 100%;
     }

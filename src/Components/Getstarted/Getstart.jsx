@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n'
 
 const Getstart = ({setShowlogin}) => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("NZ");
   const{t,i18n} =useTranslation();
   return (
     <div className='login-popup'>
@@ -23,16 +23,16 @@ const Getstart = ({setShowlogin}) => {
            <label htmlFor="email">{t("G-ln3")}</label>
             <input id='email' type="email" placeholder={t("G-ln4")} required/>
             <label htmlFor="mobile">{t("G-ln5")}</label>
-            <input id='mobile' type="text" placeholder={t("G-ln6")}  required/>
+            <input id='mobile' type="number" placeholder={t("G-ln6")}  required/>
             <label htmlFor="country">{t("G-ln7")}</label>
         
 
       <ReactFlagsSelect
-        selected={"NZ"}
+        selected={selected}
         onSelect={(code) => setSelected(code)}
         searchable
         searchPlaceholder="Search countries"
-        className="custom-flag-select"
+        className="custom-flag-select "
         selectButtonClassName="menu-flags-button"
         alignOptionsToLeft
         
@@ -47,7 +47,7 @@ const Getstart = ({setShowlogin}) => {
           <div className="login-popup-condition">
             <p>{t("G-ln9")}</p>
           </div>
-          <span style={{marginTop:"-15px"}}>{t("G-ln10")}</span>
+          <span style={{marginTop:"-15px" ,fontWeight:"400"} }>{t("G-ln10")}</span>
         </form>
         
     </div>

@@ -9,13 +9,13 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    font-family: "Oswald";
+    font-family: "Uncut Sans";
     width: 100%;
     gap: 10px;
-    padding: 0 20px;
+    padding: 0 40px;
     /* max-width: 1250px; */
-    margin-left: auto; 
-    margin-right: auto;
+    /* margin-left: auto; 
+    margin-right: auto; */
     margin-top: 20px;
 
 }
@@ -24,8 +24,10 @@
     margin: auto;
 }
 .C_section-left h1{
-    font-size: 40px;
+    font-size: 65px;
     margin-bottom: 20px;
+    font-family: "Zuume";
+    letter-spacing: 2px;
 }
 .C_section-left p{
     width: 80%;
@@ -50,6 +52,9 @@
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.C_section-right .uper h3{
+  font-weight: 900;
 }
 .C_section-right .down{
     margin-top: 20px;

@@ -33,7 +33,7 @@ const B_Hero = () => {
           </div>
           <div className='bg'>
             <div className='image'>
-              <img src="https://images.unsplash.com/photo-1533908279087-2448f4554f18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> 
+              <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> 
             </div>
           </div>
           <div className='last-heading' >

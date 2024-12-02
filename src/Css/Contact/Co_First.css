@@ -104,6 +104,8 @@ form {
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
+    font-family: "Uncut Sans";
+    font-weight: 500;
 }
 .text-from textarea {
     height: 120px;

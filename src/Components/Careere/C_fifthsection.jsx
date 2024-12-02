@@ -27,7 +27,7 @@ const C_fifth_section = () => {
         
     </div>
     </div>
-<hr />
+
 </div></>
   )
 }

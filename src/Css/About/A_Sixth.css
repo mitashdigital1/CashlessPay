@@ -75,9 +75,13 @@
     .a-first-sixth-part {
         width: 100%;
     }
+    .a-first-sixth-part h2 {
+        font-size: 35px;
+    }
     .a-second-sixth-part {
         width: 100%;
     }
+
     .a-first-sixth-part h3 {
         font-size: 25px;
         font-family: 'Uncut Sans';
