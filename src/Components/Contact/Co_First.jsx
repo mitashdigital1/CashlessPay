@@ -6,20 +6,40 @@ const Co_First = () => {
     const { t, i18n } = useTranslation();
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const formData = {
             name: event.target[0].value,
             email: event.target[1].value,
             number: event.target[2].value,
             subject: event.target[3].value,
-            reason: event.target[4].value, 
+            reason: event.target[4].value,
             message: event.target[5].value,
         };
+
         console.log('Form Data Submitted:', formData);
-    
-        setIsPopupVisible(true);
-        setTimeout(() => setIsPopupVisible(false), 3000);
+        try {
+            const response = await fetch('api/send-email', {
+                method: 'POST',
+                headers: {
+                    'content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const result = await response.json();
+
+            if (response.ok) {
+                console.log(result.message);
+                setIsPopupVisible(true);
+                setTimeout(() => setIsPopupVisible(false), 3000);
+            } else {
+                console.error('Failed to send email:', result.message);
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
+        // setIsPopupVisible(true);
+        // setTimeout(() => setIsPopupVisible(false), 3000);
     };
 
     return (
@@ -44,16 +64,16 @@ const Co_First = () => {
                     <h3>{t("CO-ln5")}</h3>
                     <form onSubmit={handleSubmit}>
                         <div className='form-first-item'>
-                            <input type="text" placeholder={t("CO-ln6")} required/>
-                            <input type="email" placeholder='support@cashlesspay.com' required/>
+                            <input type="text" placeholder={t("CO-ln6")} required />
+                            <input type="email" placeholder='support@cashlesspay.com' required />
                         </div>
                         <div className='form-second-item'>
-                            <input type="number" placeholder={t("CO-ln7")} required/>
-                            <input type="text" placeholder={t("CO-ln8")} required/>
+                            <input type="number" placeholder={t("CO-ln7")} required />
+                            <input type="text" placeholder={t("CO-ln8")} required />
                         </div>
                         <div className='from-drop-down'>
                             <select>
-                                <option value="Why do you want to get in touch?"required>{t("CO-ln9")}</option>
+                                <option value="Why do you want to get in touch?" required>{t("CO-ln9")}</option>
                                 <option>{t("CO-ln10")}</option>
                                 <option>{t("CO-ln11")}</option>
                                 <option>{t("CO-ln12")}</option>
