@@ -113,6 +113,7 @@ const Header = ({setShowlogin}) => {
            
 
           <div className="nav-right-item">
+            <div className="btn-con">
           <div className="btn_1" style={styles.container}>
              <div
         style={styles.dropdownHeader}
@@ -147,10 +148,15 @@ const Header = ({setShowlogin}) => {
           ))}
         </div>
       )}
+      
     </div>
-            <div className='btn'>
+    <div className='btn'>
               <button onClick={()=>setShowlogin(true)} >{t("button_text")}</button>
             </div>
+    </div>
+            {/* <div className='btn'>
+              <button onClick={()=>setShowlogin(true)} >{t("button_text")}</button>
+            </div> */}
             <div className='btn_3' > <IoMenu onClick={Clicked} className='menu' /></div>
            
           </div>

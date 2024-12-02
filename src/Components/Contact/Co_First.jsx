@@ -8,6 +8,16 @@ const Co_First = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const formData = {
+            name: event.target[0].value,
+            email: event.target[1].value,
+            number: event.target[2].value,
+            subject: event.target[3].value,
+            reason: event.target[4].value, 
+            message: event.target[5].value,
+        };
+        console.log('Form Data Submitted:', formData);
+    
         setIsPopupVisible(true);
         setTimeout(() => setIsPopupVisible(false), 3000);
     };
@@ -34,16 +44,16 @@ const Co_First = () => {
                     <h3>{t("CO-ln5")}</h3>
                     <form onSubmit={handleSubmit}>
                         <div className='form-first-item'>
-                            <input type="text" placeholder={t("CO-ln6")} />
-                            <input type="email" placeholder='support@cashlesspay.com' />
+                            <input type="text" placeholder={t("CO-ln6")} required/>
+                            <input type="email" placeholder='support@cashlesspay.com' required/>
                         </div>
                         <div className='form-second-item'>
-                            <input type="number" placeholder={t("CO-ln7")} />
-                            <input type="text" placeholder={t("CO-ln8")} />
+                            <input type="number" placeholder={t("CO-ln7")} required/>
+                            <input type="text" placeholder={t("CO-ln8")} required/>
                         </div>
                         <div className='from-drop-down'>
                             <select>
-                                <option value="Why do you want to get in touch?">{t("CO-ln9")}</option>
+                                <option value="Why do you want to get in touch?"required>{t("CO-ln9")}</option>
                                 <option>{t("CO-ln10")}</option>
                                 <option>{t("CO-ln11")}</option>
                                 <option>{t("CO-ln12")}</option>

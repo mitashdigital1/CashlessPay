@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import LogoFoter from "../../assets/Your paragraph text.png"
 import i18n from '../../i18n'
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Footer = () => {
     const{t,i18n} =useTranslation();
@@ -17,11 +17,12 @@ const Footer = () => {
                 <div className='footer'>
                     <div className="nav-first-item">
                         <p>{t("Fo-ln1")}</p>
-                        <a href="" onClick={()=>navigate("/")}>{t("Fo-ln2")}</a>
-                        <a href="" onClick={()=>navigate("/businesspay")}>{t("Fo-ln3")}</a>
-                        <a href="" onClick={()=>navigate("/about")}>{t("Fo-ln4")}</a>
-                        <a href="" onClick={()=>navigate("/careers")}>{t("Fo-ln5")}</a>
-                        <a href="" onClick={()=>navigate("/contact")}>{t("Fo-ln6")}</a>
+                        
+                        <Link  to="/">{t("Fo-ln2")}</Link>
+                        <Link to="/businesspay">{t("Fo-ln3")}</Link>
+                        <Link to="/about">{t("Fo-ln4")}</Link>
+                        <Link to="/careers">{t("Fo-ln5")}</Link>
+                        <Link to="/contact">{t("Fo-ln6")}</Link>
                     </div>
 
                     <div className="nav-first-item">
