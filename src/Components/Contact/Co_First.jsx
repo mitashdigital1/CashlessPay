@@ -8,6 +8,8 @@ const Co_First = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+    
+        // Collect form data
         const formData = {
             name: event.target[0].value,
             email: event.target[1].value,
@@ -16,21 +18,23 @@ const Co_First = () => {
             reason: event.target[4].value,
             message: event.target[5].value,
         };
-
+    
         console.log('Form Data Submitted:', formData);
+    
         try {
-            const response = await fetch('api/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    'content-Type': 'application/json',
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
+    
             const result = await response.json();
-
+    
             if (response.ok) {
                 console.log(result.message);
-                setIsPopupVisible(true);
+                setIsPopupVisible(true); // Show success popup
                 setTimeout(() => setIsPopupVisible(false), 3000);
             } else {
                 console.error('Failed to send email:', result.message);
@@ -38,9 +42,8 @@ const Co_First = () => {
         } catch (error) {
             console.error('Error submitting form:', error);
         }
-        // setIsPopupVisible(true);
-        // setTimeout(() => setIsPopupVisible(false), 3000);
     };
+    
 
     return (
         <div className=' con-main' >
@@ -72,7 +75,7 @@ const Co_First = () => {
                             <input type="text" placeholder={t("CO-ln8")} required />
                         </div>
                         <div className='from-drop-down'>
-                            <select>
+                            <select name="reason" required>
                                 <option value="Why do you want to get in touch?" required>{t("CO-ln9")}</option>
                                 <option>{t("CO-ln10")}</option>
                                 <option>{t("CO-ln11")}</option>

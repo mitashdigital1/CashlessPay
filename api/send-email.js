@@ -5,9 +5,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Only POST requests are allowed' });
   }
 
-  const { name, email, message } = req.body;
+  const { name, email,number,subject,reason, message } = req.body;
 
-  if (!name || !email || !message) {
+  if (!name || !email || !number || !subject || !reason || !message) {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
@@ -27,11 +27,16 @@ export default async function handler(req, res) {
       text: `
         Name: ${name}
         Email: ${email}
+        Number: ${number}
+        Subject: ${subject}
+        Reason: ${reason}
         Message: ${message}
+
       `,
     };
 
     await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
 
     return res.status(200).json({ message: 'Email sent successfully!' });
   } catch (error) {
