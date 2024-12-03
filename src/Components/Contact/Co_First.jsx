@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import '../../Css/Contact/Co_First.css'
-import { useTranslation } from 'react-i18next'
-import i18n from '../../i18n'
+import React, { useState } from 'react';
+import '../../Css/Contact/Co_First.css';
+import { useTranslation } from 'react-i18next';
+
 const Co_First = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-    
+
         // Collect form data
         const formData = {
             name: event.target[0].value,
@@ -18,88 +18,94 @@ const Co_First = () => {
             reason: event.target[4].value,
             message: event.target[5].value,
         };
-    
+
         console.log('Form Data Submitted:', formData);
-    
+
         try {
-            const response = await fetch('/api/send-email', {
+            const response = await fetch('http://localhost:8080/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
             });
-    
-            const result = await response.json();
-    
-            if (response.ok) {
-                console.log(result.message);
-                setIsPopupVisible(true); // Show success popup
-                setTimeout(() => setIsPopupVisible(false), 3000);
-            } else {
-                console.error('Failed to send email:', result.message);
+
+            if (!response.ok) {
+                console.error('Failed to send email. Status:', response.status);
+                if (response.status === 404) {
+                    alert('The email service is not available. Please try again later.');
+                } else {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return;
             }
+
+            const result = await response.json();
+            console.log(result.message);
+            setIsPopupVisible(true); // Show success popup
+            setTimeout(() => setIsPopupVisible(false), 3000);
         } catch (error) {
-            console.error('Error submitting form:', error);
+            if (error.message.includes('Failed to fetch') || error.message.includes('ERR_CONNECTION_REFUSED')) {
+                console.error('Connection refused:', error);
+                alert('Unable to connect to the server. Please ensure the backend server is running and try again.');
+            } else {
+                console.error('Error submitting form:', error);
+                alert('An error occurred while submitting the form. Please try again.');
+            }
         }
     };
-    
 
     return (
-        <div className=' con-main' >
+        <div className="con-main">
             <div className="main-heading">
-                <h1>{t("CO-ln1")}</h1>
-
+                <h1>{t('CO-ln1')}</h1>
             </div>
-            <div className='co-first'>
-                <div className='co-main-first'>
-                    <div className='co-first-item'>
-                        <h1>{t("CO-ln2")}</h1>
-
+            <div className="co-first">
+                <div className="co-main-first">
+                    <div className="co-first-item">
+                        <h1>{t('CO-ln2')}</h1>
                     </div>
-                    <div className='co-first-pragraph'>
-                        <p>{t("CO-ln3")}</p>
-                        <p>{t("CO-ln4")}
-                        </p>
+                    <div className="co-first-pragraph">
+                        <p>{t('CO-ln3')}</p>
+                        <p>{t('CO-ln4')}</p>
                     </div>
                 </div>
-                <div className='main-form'>
-                    <h3>{t("CO-ln5")}</h3>
+                <div className="main-form">
+                    <h3>{t('CO-ln5')}</h3>
                     <form onSubmit={handleSubmit}>
-                        <div className='form-first-item'>
-                            <input type="text" placeholder={t("CO-ln6")} required />
-                            <input type="email" placeholder='support@cashlesspay.com' required />
+                        <div className="form-first-item">
+                            <input type="text" placeholder={t('CO-ln6')} required />
+                            <input type="email" placeholder="support@cashlesspay.com" required />
                         </div>
-                        <div className='form-second-item'>
-                            <input type="number" placeholder={t("CO-ln7")} required />
-                            <input type="text" placeholder={t("CO-ln8")} required />
+                        <div className="form-second-item">
+                            <input type="number" placeholder={t('CO-ln7')} required />
+                            <input type="text" placeholder={t('CO-ln8')} required />
                         </div>
-                        <div className='from-drop-down'>
+                        <div className="from-drop-down">
                             <select name="reason" required>
-                                <option value="Why do you want to get in touch?" required>{t("CO-ln9")}</option>
-                                <option>{t("CO-ln10")}</option>
-                                <option>{t("CO-ln11")}</option>
-                                <option>{t("CO-ln12")}</option>
-                                <option>{t("CO-ln13")}</option>
+                                <option value="">{t('CO-ln9')}</option>
+                                <option>{t('CO-ln10')}</option>
+                                <option>{t('CO-ln11')}</option>
+                                <option>{t('CO-ln12')}</option>
+                                <option>{t('CO-ln13')}</option>
                             </select>
                         </div>
-                        <div className='text-from'>
-                            <textarea placeholder={t("CO-ln14")}></textarea>
+                        <div className="text-from">
+                            <textarea placeholder={t('CO-ln14')} required></textarea>
                         </div>
-                        <div className='form-btn'>
-                            <button>{t("CO-ln15")} </button>
+                        <div className="form-btn">
+                            <button type="submit">{t('CO-ln15')}</button>
                         </div>
                     </form>
                     {isPopupVisible && (
                         <div className="popup-message">
-                            <p>{t("CO-ln16")}</p>
+                            <p>{t('CO-ln16')}</p>
                         </div>
                     )}
-
                 </div>
             </div>
         </div>
     );
 };
 
-export default Co_First
+export default Co_First;

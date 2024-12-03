@@ -1,0 +1,68 @@
+
+.cookie-popup-container {
+    position: fixed;
+    bottom: 5px;
+    left: 20px;
+    right: 20px;
+    width: 50%;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-popup-text {
+    font-size: 17px;
+    padding-right: 5px;
+    /* margin-right: 40px; */
+    /* flex: 1; */
+}
+
+.cookie-popup-link {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.cookie-popup-deny-button {
+    
+    border: none;
+    color: #888;
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cookie-popup-accept-button {
+    
+    border: none;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+@media  screen and (min-width:300px) and (max-width:767px){
+    .cookie-popup-container{
+        padding: 2px 5px;
+        width: 95%;
+    }
+    .cookie-popup-text{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    .cookie-popup-deny-button{
+        font-size: 14px;
+    }
+    .cookie-popup-accept-button{
+        font-size: 14px;
+    }
+}

@@ -11,7 +11,7 @@ import A_Sixth from '../Components/About/A_Sixth'
 import A_Seven from '../Components/About/A_Seven'
 import A_Eight from '../Components/About/A_Eight'
 import Getstart from '../Components/Getstarted/Getstart'
-
+import CookiePopup from '../Components/Home/CookiePopup'
 
 const About = () => {
   const[showlogin,setShowlogin]= useState(false);
@@ -34,7 +34,7 @@ const About = () => {
         {/* <A_Thred/> */}
          <A_Eight/>
         <Footer/>
-    
+      <CookiePopup/>
       
       </div>
       </div>

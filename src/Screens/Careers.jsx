@@ -10,6 +10,8 @@ import C_thrid_section from '../Components/Careere/C_thirdsection'
 import C_fourth_section from '../Components/Careere/C_fourthsection'
 import C_fifth_section from '../Components/Careere/C_fifthsection'
 import Getstart from '../Components/Getstarted/Getstart'
+import CookiePopup from '../Components/Home/CookiePopup'
+
 
 const Careers = () => {
   const[showlogin,setShowlogin]= useState(false);
@@ -45,7 +47,7 @@ const Careers = () => {
 
         {/* <C_Video  /> */}
         <Footer/>
-  
+     <CookiePopup/>
       
       </div>
       </div>

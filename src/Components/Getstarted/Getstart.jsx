@@ -47,7 +47,7 @@ const Getstart = ({setShowlogin}) => {
           <div className="login-popup-condition">
             <p>{t("G-ln9")}</p>
           </div>
-          <span style={{marginTop:"-15px" ,fontWeight:"400"} }>{t("G-ln10")}</span>
+          {/* <span style={{marginTop:"-15px" ,fontWeight:"400"} }>{t("G-ln10")}</span> */}
         </form>
         
     </div>

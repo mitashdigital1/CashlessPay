@@ -3,7 +3,7 @@ import Header from '../Components/Home/Header'
 import Footer from '../Components/Home/Footer'
 import COntact from '../Components/Contact/Co_First'
 import Getstart from '../Components/Getstarted/Getstart'
-
+import CookiePopup from '../Components/Home/CookiePopup'
 
 const Contact = () => {
   const[showlogin,setShowlogin]= useState(false);
@@ -18,6 +18,7 @@ const Contact = () => {
          <div >
         <COntact/>
         <Footer/>
+        <CookiePopup/>
         </div>
         
        

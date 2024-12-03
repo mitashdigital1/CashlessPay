@@ -12,6 +12,7 @@ import B_Seven from '../Components/Business/B_SevenSec'
 import B_Eight from '../Components/Business/B_Eight'
 import B_Nine from '../Components/Business/B_Nine'
 import Getstart from '../Components/Getstarted/Getstart'
+import CookiePopup from '../Components/Home/CookiePopup'
 
 const Business = () => {
   const[showlogin,setShowlogin]= useState(false);
@@ -43,6 +44,7 @@ const Business = () => {
           {/* <B_Sixth/> */}
         <div >
         <Footer/>
+        <CookiePopup/>
         </div>
          
     </>
