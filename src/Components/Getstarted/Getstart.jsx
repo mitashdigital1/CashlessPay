@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../Css/Getstarted/Getstart.css'
 
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n'
@@ -9,6 +9,7 @@ import i18n from '../../i18n'
 const Getstart = ({setShowlogin}) => {
   const [selected, setSelected] = useState("NZ");
   const{t,i18n} =useTranslation();
+ 
   return (
     <div className='login-popup'>
         <form className='login-popup-container'>

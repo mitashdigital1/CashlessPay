@@ -75,7 +75,7 @@ const Co_First = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="form-first-item">
                             <input type="text" placeholder={t('CO-ln6')} required />
-                            <input type="email" placeholder="support@cashlesspay.com" required />
+                            <input type="email" placeholder="Your Email" required />
                         </div>
                         <div className="form-second-item">
                             <input type="number" placeholder={t('CO-ln7')} required />

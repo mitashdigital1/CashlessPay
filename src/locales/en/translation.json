@@ -9,7 +9,7 @@
     "freelancers": "Freelancers",
     "entrepreneurs": "Entrepreneurs",
     "smes": "SMEs",
-    "heading-1":"Instant, Secure Cross-Border WALLET         EMPOWERING",
+    "heading-1": "Instant, Secure Cross-Border WALLET         EMPOWERING",
     "description": "Experience seamless international transactions with CASHLESSPAY – your gateway to fast, affordable, and secure money transfers for both individuals and businesses.",
     "button_text": "Get Started",
     "label1": "PersonalPay",
@@ -207,11 +207,15 @@
     "G-ln1": "Get Started",
     "G-ln2": "Please sign up for early access. We will send you a link to download our app once we are ready to lauch",
     "G-ln3": "Email",
-    "G-ln4": "Enert Email",
+    "G-ln4": "Enter Email",
     "G-ln5": "Mobile",
     "G-ln6": "Moblie No",
     "G-ln7": "Country",
     "G-ln8": "Get The Link",
     "G-ln9": "By signing up, you agree to CashlessPay  Early Access Terms of Use and Privacy Policy",
-    "G-ln10": "sign in here"
+    "G-ln10": "sign in here",
+    "coo-ln-1": " We use cookies to optimize our services.",
+    "coo-ln-2": "Read our privacy policy.",
+    "coo-ln-3": "DENY",
+    "coo-ln-4": " ACCEPT"
 }

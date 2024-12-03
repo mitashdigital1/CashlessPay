@@ -10,11 +10,12 @@
 .login-popup-container{
 place-self: center;
 width: max(30vw,500px);
-height: 90vh;
+/* height: 90vh; */
 overflow: scroll;
 color: #212121;
 background-color: white;
 display: flex;
+height: 90%;
 flex-direction: column;
 gap: 25px;
 padding: 25px 50px;
@@ -120,13 +121,27 @@ font-family: 'Uncut Sans';
     .login-popup-container{
         position: fixed;
         width: 70%;
-        height: 80%;
         overflow:scroll;
         overflow-x: hidden;
+        padding: 25px 10px;
+        height: auto;
+    }
+    .login-popup-content p{
+        font-size: 14px;
+    }
+    .login-popup-title h2{
+        font-size: 45px;
+        font-weight: 700;
     }
 .login-popup-title h1{
     padding-left: 75%;
     position: absolute;
-    left: 10%;
+    left: 13%;
+    top: 40px;
+
+}
+.login-popup-condition p{
+    margin-top: 10px;
+ font-size: 14px;
 }
 }

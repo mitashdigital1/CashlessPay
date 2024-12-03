@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./CookiePopup.css";
-
+import i18n from '../../i18n'
+import { useTranslation } from 'react-i18next'
 const CookiePopup = () => {
+    const{t,i18n} =useTranslation();
     const [visible, setVisible] = useState(true);
 
     const handleAccept = () => {
@@ -21,15 +23,15 @@ const CookiePopup = () => {
     return (
         <div className="cookie-popup-container">
             <p className="cookie-popup-text">
-                We use cookies to optimize our services.{" "}
-                <a href="/privacy-policy" className="cookie-popup-link">Read our privacy policy</a>.
+             {t("coo-ln-1")}  {" "}
+                <a href="/privacy-policy" className="cookie-popup-link">{t("coo-ln-2")} </a>
             </p>
             <div>
             <span onClick={handleDeny} className="cookie-popup-deny-button">
-                DENY
+            {t("coo-ln-3")} 
             </span>
             <span onClick={handleAccept} className="cookie-popup-accept-button">
-                ACCEPT
+            {t("coo-ln-4")} 
             </span>
             </div>
         </div>
