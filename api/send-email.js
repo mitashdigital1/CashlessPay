@@ -11,6 +11,8 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
+  return res.status(400).json({ error: process.env.EMAIL_USER});
+
   try {
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
