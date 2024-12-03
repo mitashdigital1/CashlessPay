@@ -22,7 +22,7 @@ const Co_First = () => {
         console.log('Form Data Submitted:', formData);
 
         try {
-            const response = await fetch('http://localhost:8080/api/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
