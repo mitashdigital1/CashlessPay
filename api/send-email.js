@@ -33,8 +33,8 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      email,
-      subject,
+      to:email,
+      subject:subject,
       text: messageData,
     };
 
