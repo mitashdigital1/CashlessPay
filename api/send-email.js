@@ -9,32 +9,33 @@ export default async function handler(req, res) {
 
   // Validate required fields
   if (!name || !email || !message) {
-      return res.status(400).json({ message: 'Missing required fields' });
+    return res.status(400).json({ message: 'Missing required fields' });
   }
 
-  const messageData =  `
+  const messageData = `
     Name: ${name}
     Email: ${email}
     Number: ${number || 'Not provided'}
     Subject: ${subject || 'No subject'}
     Reason: ${reason || 'No reason'}
     Message: ${message}
-    `;
-
+  `;
 
   try {
     const transporter = nodemailer.createTransport({
-      service: 'Gmail',
+      host: 'smtp.zoho.com',
+      port: 465, // Zoho SMTP uses port 465 for SSL
+      secure: true, // True for SSL
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: 'contactus@cashlesspay.co', 
+        pass: 'PrLAednBXVeM', 
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to:"contactus@cashlesspay.co",
-      subject:subject,
+      from: 'contactus@cashlesspay.co',
+      to: email,
+      subject: subject || 'New Contact Form Submission',
       text: messageData,
     };
 

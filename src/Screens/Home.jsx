@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 
 import Header from '../Components/Home/Header'
 import HeroSec from '../Components/Home/Hero_Section'
@@ -19,6 +19,16 @@ import Getstart from '../Components/Getstarted/Getstart'
 
 const Home = () => {
   const[showlogin,setShowlogin]= useState(false);
+  useEffect(() => {
+    if (showlogin) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = "auto"; 
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showlogin]);
   return (
     <>
     <div className="div" style={{width:"1300px", maxWidth:"100%", margin:"0 auto"}}>

@@ -1,4 +1,4 @@
-import React, {useState}  from 'react'
+import React, {useState,useEffect}  from 'react'
 import Header from '../Components/Home/Header'
 import Footer from '../Components/Home/Footer'
 import B_Hero from '../Components/Business/B_Hero'
@@ -16,6 +16,16 @@ import CookiePopup from '../Components/Home/CookiePopup'
 
 const Business = () => {
   const[showlogin,setShowlogin]= useState(false);
+  useEffect(() => {
+    if (showlogin) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = "auto"; 
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showlogin]);
 
   return (
     <>

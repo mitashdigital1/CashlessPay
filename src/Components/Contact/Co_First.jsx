@@ -42,6 +42,7 @@ const Co_First = () => {
 
             const result = await response.json();
             console.log(result.message);
+            event.target.reset();
             setIsPopupVisible(true); // Show success popup
             setTimeout(() => setIsPopupVisible(false), 3000);
         } catch (error) {

@@ -14,7 +14,6 @@
     justify-content: center;
     gap: 320px; 
     width: 1000px;
-  
 }
 
 .footer-left-logo img{
@@ -108,10 +107,12 @@ font-size: 15px;
 
   /* responsive */
 @media  screen and (min-width:200px) and (max-width:767px){
+  
   .footer{
     display: block;
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
+    
    }
    .footer-left-logo img{
     width: 270px;
@@ -171,7 +172,4 @@ font-size: 15px;
     margin-left: 100px;
    }
    
-}
-
-@media  screen and (min-width:1025px) and (max-width:1200px) {  
 }
