@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       host: 'smtp.zoho.com',
       port: 587, // Zoho SMTP uses port 465 for SSL
-      secure: true, // True for SSL
+      secure: false, // True for SSL
       auth: {
         user: process.env.EMAIL_USER, // Your Zoho email address
         pass: process.env.EMAIL_PASS, // Your Zoho email password or app password
