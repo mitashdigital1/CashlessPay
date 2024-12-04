@@ -27,13 +27,13 @@ export default async function handler(req, res) {
       port: 587, // Zoho SMTP uses port 465 for SSL
       secure: false, // True for SSL
       auth: {
-        user: process.env.EMAIL_USER, // Your Zoho email address
-        pass: process.env.EMAIL_PASS, // Your Zoho email password or app password
+        user: 'contactus@cashlesspay.co', // Your Zoho email address
+        pass: 'bAp5iBTtBY8M', // Your Zoho email password or app password
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: 'contactus@cashlesspay.co',
       to: email,
       subject: subject || 'New Contact Form Submission',
       text: messageData,
