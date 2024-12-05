@@ -23,20 +23,20 @@ export default async function handler(req, res) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.com',
-      port: 465, // Zoho SMTP uses port 465 for SSL
+      host: 'Gmail',
+      port: 465,
       secure: true, // True for SSL
       auth: {
-        user: 'contactus@cashlesspay.co', // Your Zoho email address
-        pass: 'bAp5iBTtBY8M', // Your Zoho email password or app password
-      },
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS
+      }
     });
 
     const mailOptions = {
-      from: 'contactus@cashlesspay.co',
+      from: process.env.EMAIL_USER,
       to: email,
       subject: subject || 'New Contact Form Submission',
-      text: messageData,
+      text: messageData
     };
 
     await transporter.sendMail(mailOptions);
