@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../Css/Getstarted/Getstart.css'
-
 import { useState ,useEffect } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import { useTranslation } from 'react-i18next'
@@ -9,10 +8,54 @@ import i18n from '../../i18n'
 const Getstart = ({setShowlogin}) => {
   const [selected, setSelected] = useState("NZ");
   const{t,i18n} =useTranslation();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+      email: event.target.email.value,
+      number: event.target.mobile.value,
+      country: selected,
+    };
+
+    console.log('Form Data Submitted:', formData);
+
+    try {
+        const response = await fetch('/api/send-data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+            console.error('Failed to send email. Status:', response.status);
+            if (response.status === 404) {
+                alert('The email service is not available. Please try again later.');
+            } else {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return;
+        }
+
+        const result = await response.json();
+        console.log(result.message);
+        event.target.reset();
+        setIsPopupVisible(true); // Show success popup
+        setTimeout(() => setIsPopupVisible(false), 3000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setPopupMessage('An error occurred. Please try again.');
+      setIsPopupVisible(true);
+      setTimeout(() => setIsPopupVisible(false), 3000);
+    }
+};
+
  
   return (
     <div className='login-popup'>
-        <form className='login-popup-container'>
+        <form onSubmit={handleSubmit} className='login-popup-container'>
           <div className='login-popup-title'>
            <h2>{t("G-ln1")}</h2>
            <h1 onClick={()=>setShowlogin(false)} >X</h1>

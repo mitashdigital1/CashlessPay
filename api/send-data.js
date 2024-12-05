@@ -5,36 +5,31 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, number, subject, reason, message } = req.body;
+  const { email, number, country } = req.body;
 
-  // Validate required fields
-  if (!name || !email || !message) {
-      return res.status(400).json({ message: 'Missing required fields' });
+  if (!email || !country) {
+    return res.status(400).json({ message: 'Missing required fields: email or country' });
   }
-
-  const messageData =  `
-    Name: ${name}
+  const messageData = `
     Email: ${email}
     Number: ${number || 'Not provided'}
-    Addresss: ${subject || 'No Address'}
-    Enquiry Type: ${reason || 'General inquiry'}
-    Message: ${message}
-    `;
-
+    Country: ${country}
+  `;
 
   try {
+   
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to:email,
-      subject:reason,
+      to: process.env.RECIPIENT_EMAIL || 'your-recipient-email@example.com', 
+      subject: 'New Submission from Getstart Form',
       text: messageData,
     };
 
