@@ -16,8 +16,8 @@ export default async function handler(req, res) {
     Name: ${name}
     Email: ${email}
     Number: ${number || 'Not provided'}
-    Subject: ${subject || 'No subject'}
-    Reason: ${reason || 'No reason'}
+    Addresss: ${subject || 'No Address'}
+    Enquiry Type: ${reason || 'General inquiry'}
     Message: ${message}
     `;
 
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to:email,
-      subject:subject,
+      subject:reason,
       text: messageData,
     };
 
