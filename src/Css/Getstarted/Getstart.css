@@ -39,6 +39,7 @@ font-family: 'Uncut Sans';
     font-family: "zuume";
 }
 
+
 .login-popup-container  h1{
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -144,4 +145,38 @@ font-family: 'Uncut Sans';
     margin-top: 10px;
  font-size: 14px;
 }
+}
+
+.popup-message {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e1f754;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: normal;
+    font-family: 'Uncut Sans';
+    text-align: center;
+    z-index: 5010;
+    animation: fadeInOut 4s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

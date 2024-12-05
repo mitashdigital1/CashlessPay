@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n'
 
 const Getstart = ({setShowlogin}) => {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [selected, setSelected] = useState("NZ");
   const{t,i18n} =useTranslation();
 
@@ -93,7 +94,11 @@ const Getstart = ({setShowlogin}) => {
           </div>
           {/* <span style={{marginTop:"-15px" ,fontWeight:"400"} }>{t("G-ln10")}</span> */}
         </form>
-        
+        {isPopupVisible && (
+                        <div className="popup-message">
+                            <p>{t('CO-ln16')}</p>
+                        </div>
+                    )}
     </div>
   )
 }
