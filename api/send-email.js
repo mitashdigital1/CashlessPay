@@ -33,7 +33,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to:email,
+      to:'cashpnoreply@gmail.com',
       subject:reason,
       text: messageData,
     };
