@@ -11,7 +11,7 @@ const B_ThredSec = () => {
           <p>{t("B-t-ln1")}</p>
           <h2>{t("B-t-ln2")} </h2>
           <p>{t("B-t-ln3")} </p>
-           <button>{t("B-t-ln4")}</button>
+           {/* <button>{t("B-t-ln4")}</button> */}
         </div>
         <div className="imagee">
           <img

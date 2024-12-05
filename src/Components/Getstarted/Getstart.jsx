@@ -10,13 +10,26 @@ const Getstart = ({setShowlogin}) => {
   const [selected, setSelected] = useState("NZ");
   const{t,i18n} =useTranslation();
 
+  const countryNames = {
+    NZ: 'New Zealand',
+    ID: 'Indonesia',
+    TH: 'Thailand',
+    VN: 'Vietnam',
+    MY: 'Malaysia',
+    PH: 'Philippines',
+    SG: 'Singapore',
+    MM: 'Myanmar',
+    KH: 'Cambodia',
+    AU: 'Australia',
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const formData = {
       email: event.target.email.value,
       number: event.target.mobile.value,
-      country: selected,
+      country: countryNames[selected],
     };
 
     console.log('Form Data Submitted:', formData);

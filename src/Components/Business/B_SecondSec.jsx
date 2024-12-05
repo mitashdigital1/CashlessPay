@@ -19,7 +19,7 @@ const B_SecondSec = () => {
             <p>{t("B-s-ln1")}</p>
             <h2>{t("B-s-ln2")}</h2>
             <p>{t("B-s-ln3")}</p>
-            <button>{t("B-s-ln4")} </button>
+            {/* <button>{t("B-s-ln4")} </button> */}
           </div>
         </div>
       </div>
