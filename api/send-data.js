@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.RECIPIENT_EMAIL || 'your-recipient-email@example.com', 
+      to: email, 
       subject: 'New Submission from Getstart Form',
       text: messageData,
     };
