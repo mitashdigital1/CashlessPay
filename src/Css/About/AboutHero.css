@@ -1,0 +1,122 @@
+
+
+.about-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px; 
+    width: 100%;
+}
+.about-hero-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 95%;
+    border-radius: 30px;
+    padding: 30px 0px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 1250;
+
+}
+.about-hero-main-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px; 
+  
+}
+.about-hero-main-item h1{
+    font-size: 90px;
+     width: 100%;
+     text-align: center;
+     font-weight: 800;
+     color: #ffff; 
+     letter-spacing: 3px; 
+}
+.about-hero-main-item #cashlesspay{
+    font-size: 24px;
+    margin-right: 5PX;
+    font-family: 'Uncut Sans';
+    font-weight: 300;
+    color: #ffbb01;
+}
+.about-hero-main-item p{
+    font-size: 20px;
+    font-family: 'Uncut Sans';
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: white;
+     width: 80%;
+     padding: 0 120px;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 2px 10px;
+    
+}
+.input-box{
+    position: relative;
+    max-width: 100%;
+    width: 460px;
+}
+.input-box input::placeholder{
+    font-family: 'Uncut Sans';
+    font-weight: 500;
+}
+.about-hero-main-item button{
+    background-color: #659287;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 11px 30px;
+    margin: 5px 0; 
+    margin-right: 5px;
+     position: absolute;
+     right: 0;
+ 
+}
+.about-hero-main-item button:hover{
+    background-color: #65867e;
+}
+
+
+
+@media (max-width:1024px){
+    .about-hero-main-item p{
+        width: 100%;
+        padding: 0 80px;
+    }
+}
+@media  screen and (min-width:120px) and (max-width:768px){
+    .about-hero{
+        overflow-x: hidden;
+    }
+    .about-hero-main-item h1{
+        width: 50%;
+        font-size: 60px;
+    }
+    .about-hero-main-item p{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .input-box{
+        width: 80%;
+    }
+    .about-hero-main-item button{
+        height: auto;
+        width: auto;
+    }
+}
+

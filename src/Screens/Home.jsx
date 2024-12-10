@@ -1,19 +1,14 @@
 import React, { useState ,useEffect } from 'react'
 
-import Header from '../Components/Home/Header'
-import HeroSec from '../Components/Home/Hero_Section'
-import SecondSec from '../Components/Home/Second_Section'
-import ThredSec from '../Components/Home/Thred_Section'
-import ForthSec from '../Components/Home/Four_Section'
-import FifthSec from '../Components/Home/Fifth_Section'
-import SixthSec from '../Components/Home/Sixth_Section'
-import SevenSec from '../Components/Home/Seven_Section'
-import VideoSec from '../Components/Home/Video_Section'
+import Navbar from '../Components/Navbar/Navbar'
+import HomeHero from '../Components/Home/HomeHero'
+import HomeFeatureOne from '../Components/Home/HomeFeatureOne'
+import HomeFeatureTwo from '../Components/Home/HomeFeatureTwo'
+import HomeFeatureThree from '../Components/Home/HomeFeatureThree'
+import HomeFeatureFour from '../Components/Home/HomeFeatureFour'
+import HomeFeatureFive from '../Components/Home/HomeFeatureFive'
 import FooterSec from '../Components/Home/Footer'
-import Eightsec from '../Components/Home/Eight_Section'
-import CookiePopup from '../Components/Home/CookiePopup'
-// import Business from './Business'
-import Careers from './Careers'
+import CookiePopup from '../Components/Cookie/CookiePopup'
 import Getstart from '../Components/Getstarted/Getstart'
  
 
@@ -34,19 +29,15 @@ const Home = () => {
     <div className="div" style={{width:"1300px", maxWidth:"100%", margin:"0 auto"}}>
     {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
     <div>
-     <Header setShowlogin={setShowlogin}/>
-     <HeroSec setShowlogin={setShowlogin}/>
-     {/* <SecondSec/> */}
-     {/* <ThredSec/>  */}
-     <ForthSec/>
-     <FifthSec/>
-     <SixthSec/>
-     <SevenSec/>
-     <Eightsec/>
-     {/* <VideoSec/>  */}
+     <Navbar setShowlogin={setShowlogin}/>
+     <HomeHero setShowlogin={setShowlogin}/>
+     <HomeFeatureOne/>
+     <HomeFeatureTwo/>
+     <HomeFeatureThree/>
+     <HomeFeatureFour/>
+     <HomeFeatureFive/>
      <FooterSec/> 
      <CookiePopup/>
-     
 
    </div>
    </div>

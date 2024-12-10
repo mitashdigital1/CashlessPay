@@ -1,9 +1,9 @@
 import React,{useState ,useEffect} from 'react'
-import Header from '../Components/Home/Header'
+import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Home/Footer'
-import COntact from '../Components/Contact/Co_First'
+import ContactHero from '../Components/Contact/ContactHero'
 import Getstart from '../Components/Getstarted/Getstart'
-import CookiePopup from '../Components/Home/CookiePopup'
+import CookiePopup from '../Components/Cookie/CookiePopup'
 
 const Contact = () => {
   const[showlogin,setShowlogin]= useState(false);
@@ -22,19 +22,10 @@ const Contact = () => {
     <>
        <div className="div" style={{width:"1300px", maxWidth:"100%", margin:"0 auto"}}>
         {showlogin?<Getstart setShowlogin={setShowlogin}/>:<></>}
-
-         <div>
-         <Header setShowlogin={setShowlogin}/>
-         <div >
-        <COntact/>
+         <Navbar setShowlogin={setShowlogin}/>
+        <ContactHero/>
         <Footer/>
         <CookiePopup/>
-        </div>
-        
-       
-  
-        </div>
-      
     </div>
     </>
   )

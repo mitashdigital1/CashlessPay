@@ -1,0 +1,134 @@
+
+.careers-features:hover{
+  background-color: #47663B;
+}
+
+.careers-features-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Uncut Sans";
+    width: 100%;
+    gap: 10px;
+    padding: 35px 40px;
+    /* max-width: 1250px; */
+    /* margin-left: auto; 
+    margin-right: auto; */
+    /* margin-top: 20px; */
+
+}
+.careers-features-left{
+    width: 65%;
+    margin: auto;
+}
+.careers-features-left h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-family: "Zuume";
+    letter-spacing: 2px;
+}
+.careers-features-left p{
+    width: 80%;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    letter-spacing: 0.25px;
+    text-align: justify;
+    margin-bottom: 20px;
+  
+}
+.careers-features-right{
+    display: flex;
+    width: 35%;
+    margin-right: 70px;
+  flex-direction: column;
+}
+.careers-features-right span{
+    border: 0.7px solid gray;
+}
+.careers-features-right .uper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.careers-features-right .uper h3{
+  font-weight: 900;
+}
+.careers-features-right .down{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+}
+.careers-features-right .down p{
+    font-size: 70%;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+  
+  @media (max-width: 768px) {
+    .careers-features-content {
+      padding-top: 20px;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .careers-features-left h1 {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+  
+    .careers-features-left p {
+      font-size: 14px; 
+      text-align: left;
+      width: 100%;
+    }
+    .careers-features-left h1{
+      margin: 0;
+    }
+    .careers-features-left {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .careers-features-right {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .careers-features-right .down p {
+      font-size: 10px; 
+      padding: 0 5px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .careers-features-content {
+      flex-direction: column;
+      padding: 10px; 
+    }
+  
+    .careers-features-left h1 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  
+    .careers-features-left p {
+      font-size: 12px;
+    }
+  
+    .careers-features-right .down p {
+      font-size: 15px; 
+      padding: 0 3px;
+    }
+    .careers-features-right .down p{
+      font-size: 10px;
+      border: 1px solid gray;
+      background-color: gray;
+      border-radius: 4px;
+      
+  }
+  }

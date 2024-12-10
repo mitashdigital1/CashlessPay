@@ -1,0 +1,104 @@
+/* Main container */
+.contanier {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.feature-five {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+ 
+}
+
+.feature-five-main {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 30px;
+    background-color: #54725D;
+    border-radius: 30px;
+}
+
+.feature-five-main:hover {
+    background-color: #54725D;
+    border-radius: 20px;
+}
+
+/* Individual column */
+.feature-five-main div {
+    flex: 1;
+    text-align: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.feature-five-main h5 {
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-size: 80px;
+    letter-spacing: 2px;
+
+}
+
+.feature-five-main p {
+    
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Uncut Sans';
+
+}
+
+/* Responsive */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .feature-five-main {
+        background: none;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .feature-five {
+        background: none;
+    }
+
+    .feature-five-main {
+        flex-direction: column;
+        align-items: center;
+        background: none;
+
+    }
+    .feature-five-main h5 {
+    margin-bottom: 10px;
+    font-size: 40px;
+
+}
+
+.feature-five-main p {
+   
+    font-size: 20px;
+    /* margin: 0 auto; */
+}
+
+}
+
+@media (max-width: 768px) {
+    .feature-five-main h5 {
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+
+.feature-five-main p {
+   
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+}

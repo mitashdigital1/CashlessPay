@@ -1,0 +1,111 @@
+.business-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0 15px;
+  
+}
+
+.business-features-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 45px;
+    width: 100%;
+    max-width: 1300px;
+    background-color: #54725D;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.business-features-main-left{
+    width: 50%;
+    /* max-width: 50%; */
+    text-align: center;
+}
+
+.business-features-main-left img {
+    width: 100%;
+}
+
+.business-features-main-right{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    /* max-width: 50%; */
+    text-align: center;
+}
+
+.business-features-main-right h2 {
+    /* font-size: 2.5rem; */
+    /* letter-spacing: 2px; */
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.business-features-main-right p {
+    font-family: 'Uncut Sans';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.business-features-main-right button {
+    width: 50%;
+    max-width: 200px; 
+    background-color: #091c18;
+    border-radius: 50px;
+    padding: 13px 10px;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .business-features-main {
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .business-features-main-left, 
+    .business-features-main-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .business-features-main-right h2 {
+        font-size: 40px;
+    }
+
+    .business-features-main-right p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-features-main {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .business-features-main-right h2 {
+        font-size: 30px;
+    }
+
+    .business-features-main-right p {
+        font-size: 0.8rem;
+    }
+
+    .business-features-main-right button {
+        width: 70%;
+    }
+}

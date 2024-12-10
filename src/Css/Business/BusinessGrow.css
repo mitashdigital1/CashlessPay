@@ -1,0 +1,172 @@
+.contanier {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+  }
+.business-grow{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.business-grow-main{
+    width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.business-grow-main-left{
+    flex: 1;
+    /* padding: 20px; */
+}
+
+.business-grow-main-left h1 {
+    text-transform: uppercase;
+    /* letter-spacing: 3px; */
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+
+}
+
+.business-grow-main-left p {
+    font-size: 30px;
+    padding: 5px 10px;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    color: white;
+}
+
+.business-grow-main-right {
+    flex: 1;
+    /* padding: 20px; */
+}
+
+.step {
+    margin-bottom: 30px;
+    padding-top: 15px;
+
+}
+
+.blckline {
+    padding-bottom: 40px;
+    padding-top: 15px;
+    border-bottom: 2px solid white;
+}
+
+.step .points {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    float: left;
+    margin: 5px;
+}
+
+.step h4 {
+    font-size: 25px;
+    margin: 10px 0;
+    padding-left: 90px;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.step p {
+    font-size: 14px;
+    padding-left: 90px;
+    /* letter-spacing: 0.4px; */
+    /* margin-top: 20px; */
+    font-family: 'Uncut Sans';
+    font-weight: lighter;
+    color: white;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .business-grow-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* padding: 20px; */
+    }
+
+    .business-grow-main-left,
+    .business-grow-main-right {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .business-grow-main-left h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .business-grow-main-left p {
+        font-size: 20px;
+    }
+
+    .step h2 {
+        font-size: 1.8em;
+    }
+
+    .step h4 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .step p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-grow-main-left h1 {
+        font-size: 35px;
+    }
+
+    .step h2 {
+        font-size: 1.5em;
+    }
+
+    .step h4 {
+        font-size: 20px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+}

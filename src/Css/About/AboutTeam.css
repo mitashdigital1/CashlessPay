@@ -1,0 +1,137 @@
+.about-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about-team-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    border-radius: 30px;
+    gap: 40px;
+    width: 95%;
+    max-width: 1300px;
+    flex-wrap: wrap; 
+}
+
+.about-team-main-first-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex: 1;
+    max-width: 600px;
+}
+.about-team-main-first-part h2{
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.about-team-main-first-part h3 {
+    font-size: 35px;
+    font-family: 'Uncut Sans';
+    font-weight: 600;
+    color: white
+}
+
+.about-team-main-first-part p {
+    font-size: 20px;
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    margin: 15px 0;
+    letter-spacing: 0.4px;
+    color: white;
+    max-width: 500px; 
+}
+
+.about-team-main-second-part {
+    flex: 1; 
+    width: 50%;
+}
+
+.about-team-main-second-part img {
+    width: 100%; 
+    /* height: 600px; */
+    border-radius: 30px; 
+    object-fit: cover;
+    /* height:600px; */
+}
+
+/* Responsive Adjustments */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .about-team-main {
+        padding: 30px 20px; 
+    }
+    .about-team-main-first-part {
+        width: 100%;
+    }
+    .about-team-main-first-part h2{
+        font-size: 35px;
+    }
+    .about-team-main-second-part {
+        width: 100%;
+    }
+    .about-team-main-first-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 100;
+        color: white
+    }
+    
+
+    .about-team-main-first-part p {
+        /* text-align: justify; */
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 839px) {
+    .about-team-main{
+        flex-direction: column-reverse; 
+        gap: 20px;
+    }
+    .about-team-main-first-part {
+        width: 100%;
+    }
+    .about-team-main-first-part {
+        width: 100%;
+    }
+    
+
+    .about-team-main-first-part h3 {
+        font-size: 25px;
+        font-family: 'Uncut Sans';
+        font-weight: 300;
+        color: white
+    }
+
+    .about-team-main-first-part p {
+        /* text-align: justify; */
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1040px) {
+    .about-team-main{
+        width: 95%;
+    }
+    .about-team-main-first-part{
+        width: 50%;
+    }
+    .about-team-main-second-part{
+        width: 50%;
+    }
+    .about-team-main-first-part p {
+        width: 100%;
+    }
+    
+}
